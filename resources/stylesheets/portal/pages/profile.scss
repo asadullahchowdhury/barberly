@@ -1,0 +1,299 @@
+.profile {
+    height: calc(100% - 80px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--light);
+        border-radius: 10px;
+        height: 0 !important;
+    }
+
+    .profile-content{
+            width: 100%;
+
+        &.profile-content-scrollable{
+            width: 100%;
+            height: calc(100vh - 80px);
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                background-color: transparent;
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: var(--border-color-1);
+                border-radius: 10px;
+                height: 0 !important;
+            }
+
+        }
+
+            .card-content {
+                width: 944px;
+
+                @media screen and (max-width: 1200px) {
+                    width: 600px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    width: 500px;
+                }
+
+                @media screen and (max-width: 576px) {
+                    width: 100%;
+                }
+
+                .card-header {
+
+                    .card-title {
+                        font-weight: 600;
+                        font-size: 28px;
+                        color: var(--brand-dark-grey);
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 22px;
+                        }
+
+                        .card-sub-title{
+                            font-weight: normal;
+                            font-size: 16px;
+                        }
+
+                    }
+
+                }
+
+                .card-profile {
+                    width: 382px;
+                    height: auto;
+                    border: 1px solid var(--border-color-1);
+
+                    @media screen and (max-width: 1200px) {
+                        width: 600px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        width: 500px;
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        width: 100%;
+                    }
+
+                    .card-profile-avatar {
+                        width: 176px;
+                        height: 176px;
+                        border-radius: 50%;
+                        object-fit: cover;
+
+                        @media screen and (max-width: px) {
+                            width: 120px;
+                            height: 120px;
+                        }
+
+                    }
+
+                    .name {
+                        font-size: 28px;
+                        font-weight: 700;
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 22px;
+                        }
+
+                    }
+
+                    .small-icon {
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                }
+
+                .card-about {
+                    width: 542px;
+                    height: 100%;
+                    border: 1px solid var(--border-color-1);
+
+                    @media screen and (max-width: 1200px) {
+                        width: 600px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        width: 500px;
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        width: 100%;
+                    }
+
+                    .card-about-title {
+                        font-size: 20px;
+                        font-weight: 600;
+                        border-bottom: 1px solid var(--border-color-1);
+                    }
+
+                }
+
+                .card-security{
+                    width: calc(100% - 630px);
+                    border: 1px solid var(--border-color-1);
+
+                    @media screen and (max-width: 1200px) {
+                        display: none;
+                    }
+
+                }
+
+                .card-settings{
+                    width: 622px;
+                    height: auto;
+                    border: 1px solid var(--border-color-1);
+
+                    @media screen and (max-width: 1200px) {
+                        width: 600px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        width: 100%;
+                    }
+
+                    .border-bottom{
+                        border-bottom: 1px solid var(--border-color-1);
+                    }
+
+                    .settings-title{
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    .media-icon-section {
+                        .social-media-icon{
+                            width: 25px;
+                            height: 25px;
+                            object-fit: cover;
+                        }
+
+                        .btn-outline-theme{
+                            @media screen and (max-width: 390px){
+                                padding: 10px 10px !important;
+                                width: auto !important;
+                            }
+                        }
+
+                    }
+
+                }
+
+                .card-workshop{
+                    transition: 0.3s all ease-in-out;
+
+                    &:hover{
+                        transition: 0.3s all ease-in-out;
+                        box-shadow: 0 0 12px 0 var(--border-color-1);
+                    }
+
+                    .workshop-icon{
+                        width: 70px;
+                        height: 70px;
+
+                        @media screen and (max-width: 576px) {
+                            width: 125px;
+                            height: 125px;
+                        }
+
+                    }
+
+                    .btn-outline-theme{
+                        @media screen and (max-width: 768px) {
+                            width: 100%;
+                            margin-top: 20px;
+                        }
+                    }
+
+                }
+
+            }
+
+            .btn-rating{
+                width: 32%;
+                outline: none;
+                background-color: var(--light);
+                height: 50px;
+                border-radius: 10px;
+                transition: var(--default-transition);
+                font-size: 16px;
+                cursor: pointer;
+                border: 3px solid transparent;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &.active{
+                    border: 3px solid var(--theme);
+                }
+
+            }
+
+            // use this code in popup-wrapper for password, mobile number, country code.
+
+
+                .password-icon {
+                    top: 12px;
+                    right: 16px;
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                }
+
+            .mobile-content {
+                display: flex;
+                border-radius: 10px;
+                overflow: hidden;
+                background-color: var(--light);
+
+                // select form into mobile input content
+
+                .mobile-select {
+                    width: 20%;
+
+                    .form-select {
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+
+                    @media screen and (max-width: 645px) {
+                        width: 30%;
+                    }
+
+                }
+
+                // input form into mobile content
+
+                .mobile-input {
+                    width: 80%;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+
+                    @media screen and (max-width: 645px) {
+                        width: 70%;
+                    }
+
+                }
+
+            }
+        }
+
+}

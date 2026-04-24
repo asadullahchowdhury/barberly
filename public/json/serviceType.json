@@ -1,0 +1,960 @@
+[
+    {
+        "title": "Barbering",
+        "types": [
+            {
+                "name": "Beard Trimming",
+                "value": "beard_trimming"
+            },
+            {
+                "name": "Men's Haircut",
+                "value": "mens_haircut"
+            },
+            {
+                "name": "Men's Shaving",
+                "value": "mens_shaving"
+            }
+        ]
+    },
+    {
+        "title": "Body",
+        "types": [
+            {
+                "name": "Acupuncture",
+                "value": "acupuncture"
+            },
+            {
+                "name": "Airbrush Tanning",
+                "value": "airbrush_tanning"
+            },
+            {
+                "name": "Back Facial",
+                "value": "back_facial"
+            },
+            {
+                "name": "Body Scrub",
+                "value": "body_scrub"
+            },
+            {
+                "name": "Body Sculpting",
+                "value": "body_sculpting"
+            },
+            {
+                "name": "Body Wrap",
+                "value": "body_wrap"
+            },
+            {
+                "name": "Cellulite Treatment",
+                "value": "cellulite_treatment"
+            },
+            {
+                "name": "Fat Freezing",
+                "value": "fat_freezing"
+            },
+            {
+                "name": "Hyperhidrosis Treatment",
+                "value": "Hyperhidrosis_Treatment"
+            },
+            {
+                "name": "Infrared Sauna",
+                "value": "Infrared_Sauna"
+            },
+            {
+                "name": "Laser Lipo",
+                "value": "Laser_Lipo"
+            },
+            {
+                "name": "Mole Removal",
+                "value": "Mole_Removal"
+            },
+            {
+                "name": "Moroccan Bath",
+                "value": "Moroccan_Bath"
+            },
+            {
+                "name": "Mud Bath",
+                "value": "Mud_Bath"
+            },
+            {
+                "name": "Onsen",
+                "value": "Onsen"
+            },
+            {
+                "name": "Salt Therapy",
+                "value": "Salt_Therapy"
+            },
+            {
+                "name": "Scalp Micropigmentation",
+                "value": "Scalp-Micropigmentation"
+            },
+            {
+                "name": "Scar Removal",
+                "value": "Scar_Removal"
+            },
+            {
+                "name": "Skin Tag Removal",
+                "value": "Skin_Tag_Removal"
+            },
+            {
+                "name": "Spa Package",
+                "value": "Spa_Package"
+            },
+            {
+                "name": "Spray Tanning",
+                "value": "Spray_Tanning"
+            },
+            {
+                "name": "Steam Bath",
+                "value": "Steam_Bath"
+            },
+            {
+                "name": "Stretch Mark Removal",
+                "value": "Stretch_Mark_Removal"
+            },
+            {
+                "name": "Tanning Bed",
+                "value": "Tanning_Bed"
+            },
+            {
+                "name": "Turkish Bath",
+                "value": "Turkish_Bath"
+            },
+            {
+                "name": "Ultrasonic Cavitation",
+                "value": "Ultrasonic_Cavitation"
+            },
+            {
+                "name": "Vajacial",
+                "value": "Vajacial"
+            }
+        ]
+    },
+    {
+        "title": "Counselling & holistic",
+        "types": [
+            {
+                "name": "Ayurveda",
+                "value": "Ayurveda"
+            },
+            {
+                "name": "Chinese Medicine",
+                "value": "Chinese_Medicine"
+            },
+            {
+                "name": "Counselling",
+                "value": "Counselling"
+            },
+            {
+                "name": "Cupping Therapy",
+                "value": "Cupping_Therapy"
+            },
+            {
+                "name": "Energy Healing",
+                "value": "Energy_Healing"
+            },
+            {
+                "name": "Hypnotherapy",
+                "value": "Hypnotherapy"
+            },
+            {
+                "name": "Life Coaching",
+                "value": "Life_Coaching"
+            },
+            {
+                "name": "Mindfulness",
+                "value": "Mindfulness"
+            },
+            {
+                "name": "Naturopathy",
+                "value": "Naturopathy"
+            },
+            {
+                "name": "Nutrition Counselling",
+                "value": "Nutrition_Counselling"
+            },
+            {
+                "name": "Psychic Reading",
+                "value": "Psychic_Reading"
+            },
+            {
+                "name": "Psychotherapy",
+                "value": "Psychotherapy"
+            },
+            {
+                "name": "Sensory Deprivation Tank",
+                "value": "Sensory_Deprivation_Tank"
+            }
+        ]
+    },
+    {
+        "title": "Eyebrows & eyelashes",
+        "types": [
+            {
+                "name": "Brow Lamination",
+                "value": "Brow_Lamination"
+            },
+            {
+                "name": "Eyebrow Shaping",
+                "value": "Eyebrow_Shaping"
+            },
+            {
+                "name": "Eyebrow Tinting",
+                "value": "Eyebrow_Tinting"
+            },
+            {
+                "name": "Eyelash Extensions",
+                "value": "Eyelash_Extensions"
+            },
+            {
+                "name": "Eyelash Tinting",
+                "value": "Eyelash_Tinting"
+            },
+            {
+                "name": "Henna Brows",
+                "value": "Henna_Brows"
+            },
+            {
+                "name": "Lash Lift",
+                "value": "Lash_Lift"
+            },
+            {
+                "name": "Lash Lift and Tint",
+                "value": "Lash_Lift_and_Tint"
+            },
+            {
+                "name": "Powder Brows",
+                "value": "Powder_Brows"
+            }
+        ]
+    },
+    {
+        "title": "Facials & skincare",
+        "types": [
+            {
+                "name": "Beard Trimming",
+                "value": "beard_trimming"
+            },
+            {
+                "name": "Men's Haircut",
+                "value": "mens_haircut"
+            },
+            {
+                "name": "Men's Shaving",
+                "value": "mens shaving"
+            },
+            {
+                "name": "Acne Facial",
+                "value": "Acne_Facial"
+            },
+            {
+                "name": "Acne Scar Treatment",
+                "value": "Acne_Scar_Treatment"
+            },
+            {
+                "name": "Chemical Peel",
+                "value": "Chemical_Peel"
+            },
+            {
+                "name": "Dermabrasion",
+                "value": "Dermabrasion"
+            },
+            {
+                "name": "Dermaplaning",
+                "value": "Dermaplaning"
+            },
+            {
+                "name": "Facial Extractions",
+                "value": "Facial_Extractions"
+            },
+            {
+                "name": "Facial Massage",
+                "value": "Facial_Massage"
+            },
+            {
+                "name": "IPL Treatment",
+                "value": "IPL_Treatment"
+            },
+            {
+                "name": "Laser Resurfacing",
+                "value": "Laser_Resurfacing"
+            },
+            {
+                "name": "LED Light Therapy",
+                "value": "LED_Light_Therapy"
+            },
+            {
+                "name": "Men's Facial",
+                "value": "Mens_Facial"
+            },
+            {
+                "name": "Mesotherapy",
+                "value": "Mesotherapy"
+            },
+            {
+                "name": "Microblading",
+                "value": "Microblading"
+            },
+            {
+                "name": "Microcurrent Facial",
+                "value": "Microcurrent Facial"
+            },
+            {
+                "name": "Microdermabrasion",
+                "value": "Microdermabrasion"
+            },
+            {
+                "name": "Microneedling",
+                "value": "Microneedling"
+            },
+            {
+                "name": "Oxygen Facial",
+                "value": "Oxygen_Facial"
+            },
+            {
+                "name": "Skin Consultation",
+                "value": "Skin_Consultation"
+            },
+            {
+                "name": "Skin Lightening Treatment",
+                "value": "Skin_Lightening_Treatment"
+            },
+            {
+                "name": "Skin Tightening",
+                "value": "Skin_Tightening"
+            },
+            {
+                "name": "Spa Facial",
+                "value": "Spa_Facial"
+            },
+            {
+                "name": "Thread Lift",
+                "value": "Thread_Lift"
+            },
+            {
+                "name": "Vampire Facial",
+                "value": "Vampire_Facial"
+            }
+        ]
+    },
+    {
+        "title": "Fitness",
+        "types": [
+            {
+                "name": "Fitness Classes",
+                "value": "Fitness_Classes"
+            },
+            {
+                "name": "Personal Training",
+                "value": "Personal_Training"
+            }
+        ]
+    },
+    {
+        "title": "Hair removal",
+        "types": [
+            {
+                "name": "Arm Waxing",
+                "value": "Arm_Waxing"
+            },
+            {
+                "name": "Back Waxing",
+                "value": "Back_Waxing"
+            },
+            {
+                "name": "Bikini Waxing",
+                "value": "Bikini_Waxing"
+            },
+            {
+                "name": "Brazilian Waxing",
+                "value": "Brazilian_Waxing"
+            },
+            {
+                "name": "Electrolysis",
+                "value": "Electrolysis"
+            },
+            {
+                "name": "Eyebrow Threading",
+                "value": "Eyebrow_Threading"
+            },
+            {
+                "name": "Eyebrow Waxing",
+                "value": "Eyebrow_Waxing"
+            },
+            {
+                "name": "Face Waxing",
+                "value": "Face_Waxing"
+            },
+            {
+                "name": "Full Body Waxing",
+                "value": "Full_Body_Waxing"
+            },
+            {
+                "name": "Hollywood Waxing",
+                "value": "Hollywood_Waxing"
+            },
+            {
+                "name": "IPL Hair Removal",
+                "value": "IPL_Hair_Removal"
+            },
+            {
+                "name": "Laser Hair Removal",
+                "value": "Laser_Hair_Removal"
+            },
+            {
+                "name": "Leg Waxing",
+                "value": "Leg_Waxing"
+            },
+            {
+                "name": "Men's Waxing",
+                "value": "Mens_Waxing"
+            },
+            {
+                "name": "Sugaring",
+                "value": "Sugaring"
+            },
+            {
+                "name": "Threading",
+                "value": "Threading"
+            },
+            {
+                "name": "Underarm Waxing",
+                "value": "Underarm_Waxing"
+            }
+        ]
+    },
+    {
+        "title": "Hair & styling",
+        "types": [
+            {
+                "name": "Afro Hair",
+                "value": "Afro_Hair"
+            },
+            {
+                "name": "Asian Haircut",
+                "value": "Asian_Haircut"
+            },
+            {
+                "name": "Balayage",
+                "value": "Balayage"
+            },
+            {
+                "name": "Blow Dry",
+                "value": "Blow_Dry"
+            },
+            {
+                "name": "Bridal Hair",
+                "value": "Bridal_Hair"
+            },
+            {
+                "name": "Children's Haircut",
+                "value": "Childrens_Haircut"
+            },
+            {
+                "name": "Curly Haircut",
+                "value": "Curly_Haircut"
+            },
+            {
+                "name": "Hair Braiding",
+                "value": "Hair_Braiding"
+            },
+            {
+                "name": "Hair Colouring",
+                "value": "Hair_Colouring"
+            },
+            {
+                "name": "Hair Consultation",
+                "value": "Hair_Consultation"
+            },
+            {
+                "name": "Hair Extensions",
+                "value": "Hair_Extensions"
+            },
+            {
+                "name": "Hair Loss Treatment",
+                "value": "Hair_Loss_Treatment"
+            },
+            {
+                "name": "Hair Makeup",
+                "value": "Hair_Makeup"
+            },
+            {
+                "name": "Hair Styling",
+                "value": "Hair_Styling"
+            },
+            {
+                "name": "Hair Treatment",
+                "value": "Hair_Treatment"
+            },
+            {
+                "name": "Hair Twists",
+                "value": "Hair_Twists"
+            },
+            {
+                "name": "Hair Weaves",
+                "value": "Hair_Weaves"
+            },
+            {
+                "name": "Head Shave",
+                "value": "Head_Shave"
+            },
+            {
+                "name": "Highlights",
+                "value": "Highlights"
+            },
+            {
+                "name": "Keratin Treatment",
+                "value": "Keratin_Treatment"
+            },
+            {
+                "name": "Locs",
+                "value": "Locs"
+            },
+            {
+                "name": "Perm",
+                "value": "Perm"
+            },
+            {
+                "name": "Permanent Hair Straightening",
+                "value": "Permanent_Hair_Straightening"
+            },
+            {
+                "name": "Updo",
+                "value": "Updo"
+            },
+            {
+                "name": "Wig Installation",
+                "value": "Wig_Installation"
+            },
+            {
+                "name": "Women's Haircut",
+                "value": "Womens_Haircut"
+            },
+            {
+                "name": "Injectables & fillers",
+                "value": "Injectables_and_fillers"
+            },
+            {
+                "name": "Anti-Wrinkle Injections",
+                "value": "Anti_Wrinkle_Injections"
+            },
+            {
+                "name": "Dermal Fillers",
+                "value": "Dermal_Fillers"
+            },
+            {
+                "name": "Fat Dissolving Injections",
+                "value": "Fat_Dissolving_Injections"
+            },
+            {
+                "name": "Lip Fillers",
+                "value": "Lip_Fillers"
+            },
+            {
+                "name": "Non-Surgical Facelift",
+                "value": "Non-Surgical Facelift"
+            }
+        ]
+    },
+    {
+        "title": "Makeup",
+        "types": [
+            {
+                "name": "Bridal Makeup",
+                "value": "Bridal_Makeup"
+            },
+            {
+                "name": "Makeup Service",
+                "value": "Makeup_Service"
+            },
+            {
+                "name": "Permanent Makeup",
+                "value": "Permanent_Makeup"
+            }
+        ]
+    },
+    {
+        "title": "Massage",
+        "types": [
+            {
+                "name": "Acupressure",
+                "value": "Acupressure"
+            },
+            {
+                "name": "Aromatherapy Massage",
+                "value": "Aromatherapy_Massage"
+            },
+            {
+                "name": "Ashiatsu",
+                "value": "Ashiatsu"
+            },
+            {
+                "name": "Ayurvedic Massage",
+                "value": "Ayurvedic_Massage"
+            },
+            {
+                "name": "Back Massage",
+                "value": "Back_Massage"
+            },
+            {
+                "name": "Balinese Massage",
+                "value": "Balinese_Massage"
+            },
+            {
+                "name": "Chair Massage",
+                "value": "Chair_Massage"
+            },
+            {
+                "name": "Chinese Massage",
+                "value": "Chinese_Massage"
+            },
+            {
+                "name": "Couples Massage",
+                "value": "Couples_Massage"
+            },
+            {
+                "name": "Deep Tissue Massage",
+                "value": "Deep_Tissue_Massage"
+            },
+            {
+                "name": "Foot Massage",
+                "value": "Foot_Massage"
+            },
+            {
+                "name": "Full Body Massage",
+                "value": "Full_Body_Massage"
+            },
+            {
+                "name": "Hand Massage",
+                "value": "Hand_Massage"
+            },
+            {
+                "name": "Head Massage",
+                "value": "Head_Massage"
+            },
+            {
+                "name": "Hot Stone Massage",
+                "value": "Hot_Stone_Massage"
+            },
+            {
+                "name": "Korean Massage",
+                "value": "Korean_Massage"
+            },
+            {
+                "name": "Lomi Lomi Massage",
+                "value": "Lomi_Lomi_Massage"
+            },
+            {
+                "name": "Lymphatic Drainage Massage",
+                "value": "Lymphatic_Drainage_Massage"
+            },
+            {
+                "name": "Medical Massage",
+                "value": "Medical_Massage"
+            },
+            {
+                "name": "Oil Massage",
+                "value": "Oil_Massage"
+            },
+            {
+                "name": "Prenatal Massage",
+                "value": "Prenatal_Massage"
+            },
+            {
+                "name": "Reflexology",
+                "value": "Reflexology"
+            },
+            {
+                "name": "Relaxing Massage",
+                "value": "Relaxing_Massage"
+            },
+            {
+                "name": "Remedial Massage",
+                "value": "Remedial_Massage"
+            },
+            {
+                "name": "Shiatsu Massage",
+                "value": "Shiatsu_Massage"
+            },
+            {
+                "name": "Spa Massage",
+                "value": "Spa_Massage"
+            },
+            {
+                "name": "Sports Massage",
+                "value": "Sports_Massage"
+            },
+            {
+                "name": "Swedish Massage",
+                "value": "Swedish_Massage"
+            },
+            {
+                "name": "Thai Massage",
+                "value": "Thai_Massage"
+            },
+            {
+                "name": "Therapeutic Massage",
+                "value": "Therapeutic_Massage"
+            },
+            {
+                "name": "Trigger Point Massage",
+                "value": "Trigger_Point_Massage"
+            },
+            {
+                "name": "Wood Therapy",
+                "value": "Wood_Therapy"
+            }
+        ]
+    },
+    {
+        "title": "Medical & dental",
+        "types": [
+            {
+                "name": "Bariatric Surgery",
+                "value": "Bariatric_Surgery"
+            },
+            {
+                "name": "Bodywork",
+                "value": "Bodywork"
+            },
+            {
+                "name": "Chiropractic",
+                "value": "Chiropractic"
+            },
+            {
+                "name": "Cosmetic Dentistry",
+                "value": "Cosmetic_Dentistry"
+            },
+            {
+                "name": "Cryotherapy",
+                "value": "Cryotherapy"
+            },
+            {
+                "name": "Dermatology",
+                "value": "Dermatology"
+            },
+            {
+                "name": "Dry Needling",
+                "value": "Dry_Needling"
+            },
+            {
+                "name": "General Dentistry",
+                "value": "General_Dentistry"
+            },
+            {
+                "name": "Hair Transplants",
+                "value": "Hair_Transplants"
+            },
+            {
+                "name": "Hydrotherapy",
+                "value": "Hydrotherapy"
+            },
+            {
+                "name": "Hyperbaric Oxygen Therapy",
+                "value": "Hyperbaric_Oxygen_Therapy"
+            },
+            {
+                "name": "IV Drip",
+                "value": "IV_Drip"
+            },
+            {
+                "name": "Medical Care",
+                "value": "Medical_Care"
+            },
+            {
+                "name": "Occupational Therapy",
+                "value": "Occupational_Therapy"
+            },
+            {
+                "name": "Optometry",
+                "value": "Optometry"
+            },
+            {
+                "name": "Orthodontics",
+                "value": "Orthodontics"
+            },
+            {
+                "name": "Osteopathy",
+                "value": "Osteopathy"
+            },
+            {
+                "name": "Physiotherapy",
+                "value": "Physiotherapy"
+            },
+            {
+                "name": "Plastic Surgery",
+                "value": "Plastic_Surgery"
+            },
+            {
+                "name": "Podiatry",
+                "value": "Podiatry"
+            },
+            {
+                "name": "Sclerotherapy",
+                "value": "Sclerotherapy"
+            },
+            {
+                "name": "Speech Therapy",
+                "value": "Speech_Therapy"
+            },
+            {
+                "name": "Teeth Whitening",
+                "value": "Teeth_Whitening"
+            },
+            {
+                "name": "Weight Loss Program",
+                "value": "Weight_Loss_Program"
+            }
+        ]
+    },
+    {
+        "title": "Nails",
+        "types": [
+            {
+                "name": "Acrylic Nails",
+                "value": "Acrylic_Nails"
+            },
+            {
+                "name": "Dip Powder Nails",
+                "value": "Dip_Powder_Nails"
+            },
+            {
+                "name": "Fish Manicure",
+                "value": "Fish_Manicure"
+            },
+            {
+                "name": "Fish Pedicure",
+                "value": "Fish_Pedicure"
+            },
+            {
+                "name": "Foot Spa",
+                "value": "Foot_Spa"
+            },
+            {
+                "name": "French Nails",
+                "value": "French_Nails"
+            },
+            {
+                "name": "Gel Nail Extensions",
+                "value": "Gel_Nail_Extensions"
+            },
+            {
+                "name": "Gel Nails",
+                "value": "Gel_Nails"
+            },
+            {
+                "name": "Hybrid Nails",
+                "value": "Hybrid_Nails"
+            },
+            {
+                "name": "Manicure",
+                "value": "Manicure"
+            },
+            {
+                "name": "Manicure and Pedicure",
+                "value": "Manicure_and_Pedicure"
+            },
+            {
+                "name": "Men's Manicure",
+                "value": "Men's_Manicure"
+            },
+            {
+                "name": "Men's Pedicure",
+                "value": "Men's_Pedicure"
+            },
+            {
+                "name": "Nail Art",
+                "value": "Nail_Art"
+            },
+            {
+                "name": "Nail Extensions",
+                "value": "Nail_Extensions"
+            },
+            {
+                "name": "Nail Polish",
+                "value": "Nail_Polish"
+            },
+            {
+                "name": "Ombre Nails",
+                "value": "Ombre_Nails"
+            },
+            {
+                "name": "Paraffin Wax Treatment",
+                "value": "Paraffin_Wax_Treatment"
+            },
+            {
+                "name": "Pedicure",
+                "value": "Pedicure"
+            },
+            {
+                "name": "Russian Manicure",
+                "value": "Russian_Manicure"
+            },
+            {
+                "name": "Spa Manicure",
+                "value": "Spa_Manicure"
+            },
+            {
+                "name": "Spa Pedicure",
+                "value": "Spa_Pedicure"
+            }
+        ]
+    },
+    {
+        "title": "Tattoo & piercing",
+        "types": [
+            {
+                "name": "Body Piercing",
+                "value": "Body_Piercing"
+            },
+            {
+                "name": "Ear Piercing",
+                "value": "Ear_Piercing"
+            },
+            {
+                "name": "Henna Tattoos",
+                "value": "Henna_Tattoos"
+            },
+            {
+                "name": "Lip Blushing",
+                "value": "Lip_Blushing"
+            },
+            {
+                "name": "Nose Piercing",
+                "value": "Nose_Piercing"
+            },
+            {
+                "name": "Tattooing",
+                "value": "Tattooing"
+            },
+            {
+                "name": "Tattoo Removal",
+                "value": "Tattoo_Removal"
+            }
+        ]
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

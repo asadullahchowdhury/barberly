@@ -1,0 +1,38 @@
+.wh-100{
+    width: 100%;
+}
+.d-grid {
+    display: grid;
+}
+
+
+.grid-template-col-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-template-col-md-2 {
+    @media screen and (min-width: 767px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+//Defines the number of iteration for gap/gutter.
+$iterations: 100;
+
+//Defines the base value for gap/gutter.
+$base-value: 1px;
+
+
+//Loop to generate CSS classes for gaps/gutters
+
+@for $i from 1 through $iterations {
+
+    .gap-#{$i} {
+        gap: $base-value * $i;
+    }
+
+    .gap-x-#{$i} {
+        gap: 0 $base-value * $i;
+    }
+}

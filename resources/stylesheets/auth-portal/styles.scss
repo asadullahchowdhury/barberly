@@ -1,0 +1,34 @@
+/*
+    Fonts
+*/
+@import "../fonts";
+
+/*
+    Root
+*/
+@import "../root";
+
+/*
+    Pages
+*/
+@import "pages/auth";
+
+
+/*
+    Account setup
+*/
+@import "../auth-portal/pages/account-setup";
+
+
+
+/*
+Components
+*/
+
+@import "components/flex";
+
+@import "components/display";
+
+@import "../components/customToaster.scss";
+
+@import "../components/animation";

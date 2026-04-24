@@ -1,0 +1,278 @@
+//Defines the number of iteration.
+$iterations: 500;
+
+//Defines the base value.
+$base-value: 1px;
+
+
+//Loop to generate CSS classes
+
+@for $i from 1 through $iterations {
+
+    .padding-#{$i} {
+        padding: $base-value * $i!important;
+    }
+
+    .padding-top-#{$i} {
+        padding-top: $base-value * $i!important;
+    }
+
+    .padding-bottom-#{$i} {
+        padding-bottom: $base-value * $i!important;
+    }
+
+    .padding-right-#{$i} {
+        padding-right: $base-value * $i!important;
+    }
+
+    .padding-left-#{$i} {
+        padding-left: $base-value * $i!important;
+    }
+
+    .padding-x-#{$i} {
+        padding-left: $base-value * $i!important;
+        padding-right: $base-value * $i!important;
+    }
+
+    .padding-y-#{$i} {
+        padding-top: $base-value * $i!important;
+        padding-bottom: $base-value * $i!important;
+    }
+
+
+
+    // padding media queries
+
+    .padding-xxl-#{$i} {
+        @media screen and (min-width: 1400px) {
+            padding: $base-value * $i !important;
+        }
+    }
+
+    .padding-xl-#{$i} {
+        @media screen and (min-width: 1200px) {
+            padding: $base-value * $i !important;
+        }
+    }
+
+    .padding-lg-#{$i} {
+        @media screen and (min-width: 992px) {
+            padding: $base-value * $i !important;
+        }
+    }
+
+    .padding-md-#{$i} {
+        @media screen and (min-width: 768px) {
+            padding: $base-value * $i !important;
+        }
+    }
+
+    .padding-sm-#{$i} {
+        @media screen and (min-width: 576px) {
+            padding: $base-value * $i !important;
+        }
+    }
+
+
+    //padding right queries
+    .padding-xxl-right-#{$i} {
+        @media screen and (min-width: 1400px) {
+            padding-right: $base-value * $i !important;
+        }
+    }
+
+    .padding-xl-right-#{$i} {
+        @media screen and (min-width: 1200px) {
+            padding-right: $base-value * $i !important;
+        }
+    }
+
+    .padding-lg-right-#{$i} {
+        @media screen and (min-width: 992px) {
+            padding-right: $base-value * $i !important;
+        }
+    }
+
+    .padding-md-right-#{$i} {
+        @media screen and (min-width: 768px) {
+            padding-right: $base-value * $i !important;
+        }
+    }
+
+    .padding-sm-right-#{$i} {
+        @media screen and (min-width: 576px) {
+            padding-right: $base-value * $i !important;
+        }
+    }
+
+
+    //padding left queries
+    .padding-xxl-left-#{$i} {
+        @media screen and (min-width: 1400px) {
+            padding-left: $base-value * $i !important;
+        }
+    }
+
+    .padding-xl-left-#{$i} {
+        @media screen and (min-width: 1200px) {
+            padding-left: $base-value * $i !important;
+        }
+    }
+
+    .padding-lg-left-#{$i} {
+        @media screen and (min-width: 992px) {
+            padding-left: $base-value * $i !important;
+        }
+    }
+
+    .padding-md-left-#{$i} {
+        @media screen and (min-width: 768px) {
+            padding-left: $base-value * $i !important;
+        }
+    }
+
+    .padding-sm-left-#{$i} {
+        @media screen and (min-width: 576px) {
+            padding-left: $base-value * $i !important;
+        }
+    }
+
+
+    //padding top queries
+    .padding-xxl-top-#{$i} {
+        @media screen and (min-width: 1400px) {
+            padding-top: $base-value * $i !important;
+        }
+    }
+
+    .padding-xl-top-#{$i} {
+        @media screen and (min-width: 1200px) {
+            padding-top: $base-value * $i !important;
+        }
+    }
+
+    .padding-lg-top-#{$i} {
+        @media screen and (min-width: 992px) {
+            padding-top: $base-value * $i !important;
+        }
+    }
+
+    .padding-md-top-#{$i} {
+        @media screen and (min-width: 768px) {
+            padding-top: $base-value * $i !important;
+        }
+    }
+
+    .padding-sm-top-#{$i} {
+        @media screen and (min-width: 576px) {
+            padding-top: $base-value * $i !important;
+        }
+    }
+
+
+    //padding bottom queries
+    .padding-xxl-bottom-#{$i} {
+        @media screen and (min-width: 1400px) {
+            padding-bottom: $base-value * $i !important;
+        }
+    }
+
+    .padding-xl-bottom-#{$i} {
+        @media screen and (min-width: 1200px) {
+            padding-bottom: $base-value * $i !important;
+        }
+    }
+
+    .padding-lg-bottom-#{$i} {
+        @media screen and (min-width: 992px) {
+            padding-bottom: $base-value * $i !important;
+        }
+    }
+
+    .padding-md-bottom-#{$i} {
+        @media screen and (min-width: 768px) {
+            padding-bottom: $base-value * $i !important;
+        }
+    }
+
+    .padding-sm-bottom-#{$i} {
+        @media screen and (min-width: 576px) {
+            padding-bottom: $base-value * $i !important;
+        }
+    }
+
+
+
+    //padding x axis queries
+    .padding-xxl-x-#{$i} {
+        @media screen and (min-width: 1400px) {
+            padding-bottom: $base-value * $i !important;
+        }
+    }
+
+    .padding-xl-x-#{$i} {
+        @media screen and (min-width: 1200px) {
+            padding-left: $base-value * $i!important;
+            padding-right: $base-value * $i!important;
+        }
+    }
+
+    .padding-lg-x-#{$i} {
+        @media screen and (min-width: 992px) {
+            padding-left: $base-value * $i!important;
+            padding-right: $base-value * $i!important;
+        }
+    }
+
+    .padding-md-x-#{$i} {
+        @media screen and (min-width: 768px) {
+            padding-left: $base-value * $i!important;
+            padding-right: $base-value * $i!important;
+        }
+    }
+
+    .padding-sm-x-#{$i} {
+        @media screen and (min-width: 576px) {
+            padding-left: $base-value * $i!important;
+            padding-right: $base-value * $i!important;
+        }
+    }
+
+
+    //padding y axis queries
+    .padding-xxl-y-#{$i} {
+        @media screen and (min-width: 1400px) {
+            padding-top: $base-value * $i!important;
+            padding-bottom: $base-value * $i!important;
+        }
+    }
+
+    .padding-xl-y-#{$i} {
+        @media screen and (min-width: 1200px) {
+            padding-top: $base-value * $i!important;
+            padding-bottom: $base-value * $i!important;
+        }
+    }
+
+    .padding-lg-y-#{$i} {
+        @media screen and (min-width: 992px) {
+            padding-top: $base-value * $i!important;
+            padding-bottom: $base-value * $i!important;
+        }
+    }
+
+    .padding-md-y-#{$i} {
+        @media screen and (min-width: 768px) {
+            padding-top: $base-value * $i!important;
+            padding-bottom: $base-value * $i!important;
+        }
+    }
+
+    .padding-sm-y-#{$i} {
+        @media screen and (min-width: 576px) {
+            padding-top: $base-value * $i!important;
+            padding-bottom: $base-value * $i!important;
+        }
+    }
+
+}

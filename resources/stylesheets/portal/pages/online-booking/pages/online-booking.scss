@@ -1,0 +1,92 @@
+.online-booking-wrapper {
+
+    @import "../layout/includes/header";
+
+    // location working hour
+
+    .btn-icon {
+        transition: 0.3s all ease-in-out;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            transition: 0.3s all ease-in-out;
+            background-color: var(--border-color-2);
+        }
+    }
+
+    // working hourse
+
+    .single-working-hour {
+        border-bottom: 1px solid var(--border-color-1);
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+    }
+
+    // location photos
+
+
+    .location-photo {
+        height: 520px;
+        min-height: 520px;
+        position: relative;
+
+        &.mini{
+            height: 170px;
+            min-height: 170px;
+        }
+
+
+        &.uploaded {
+            &:before {
+                position: absolute;
+                transition: .3s all ease-in-out;
+                border-radius: .5rem;
+                content: '';
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+            &:hover {
+                &:before {
+                    transition: .3s all ease-in-out;
+                    background-color: var(--half-black);
+
+                }
+            }
+
+        }
+
+        .delete-btn {
+            transition: .3s all ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &:hover {
+           .delete-btn{
+               transition: .3s all ease-in-out;
+               opacity: 1;
+               visibility: visible;
+           }
+        }
+
+
+        @media screen and (max-width: 768px) {
+            max-height: 350px;
+        }
+
+        @media screen and (max-width: 567px) {
+            max-height: 250px;
+        }
+    }
+
+}

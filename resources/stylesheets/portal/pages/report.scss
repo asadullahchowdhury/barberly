@@ -1,0 +1,249 @@
+.report{
+    position: relative;
+
+    .sidebar-nav{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 200px;
+        height: calc(100vh - 80px);
+        background-color: var(--white);
+        padding: 10px;
+        z-index: 2;
+        border-right: 1px solid var(--shadow);
+        transition: 0.3s all ease-in-out;
+
+        &.active {
+            left: -200px;
+            transition: 0.3s all ease-in-out;
+        }
+
+        @media screen and (max-width: 1450px) {
+            position: absolute;
+            left: -200px;
+            top: 0;
+            bottom: 10px;
+
+            &.active {
+                left: 0;
+            }
+
+        }
+
+        .sidebar-toggler {
+            right: -15px;
+            top: 15px;
+            width: 30px;
+            height: 30px;
+            background-color: var(--white);
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+            border: 1px solid var(--shadow);
+            transform: rotate(180deg);
+            transition: 0.3s all ease-in-out;
+
+            @media screen and (max-width: 1450px){
+                right: -53px;
+                transform: rotate(0deg);
+                transition: 0.3s all ease-in-out;
+            }
+
+            &:hover{
+                background-color: var(--light);
+            }
+
+            &.active{
+                right: -65px;
+                transform: rotate(0deg);
+                transition: 0.3s all ease-in-out;
+
+                @media screen and (max-width: 1450px){
+                    right: -15px;
+                    transform: rotate(180deg);
+                    transition: 0.3s all ease-in-out;
+                }
+
+            }
+        }
+
+        .nav-link{
+            transition: 0.3s all ease-in-out;
+            border-radius: 5px;
+
+            &:hover, &.active{
+                transition: 0.3s all ease-in-out;
+                background-color: var(--border-color-1);
+            }
+
+        }
+
+        .report-sidebar-title{
+            font-size: 18px;
+            padding: 8px 16px;
+        }
+
+    }
+
+    .btn-hover{
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.3s all ease-in-out;
+        outline: none;
+        border: none;
+        &:hover{
+            transition: 0.3s all ease-in-out;
+            background-color: var(--border-color-1);
+        }
+    }
+
+    .report-group-content{
+
+        .hover-effect{
+            transition: 0.3s all ease-in-out;
+            border-radius: 5px;
+
+            &:hover{
+                transition: 0.3s all ease-in-out;
+                background-color: var(--bs-light);
+            }
+        }
+
+        .btn-theme{
+            transition: 0s !important;
+            &:active{
+                transform: scale(1);
+            }
+        }
+
+        .res-content{
+            width: 95%;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        .list-content-data{
+            width: 100%;
+            height: calc(100vh - 390px);
+            overflow-y: scroll;
+
+            @media screen and (max-width: 1199px) {
+                height: calc(100vh - 435px);
+            }
+
+            @media screen and (max-width: 1122px) {
+                height: calc(100vh - 500px);
+            }
+
+            @media screen and (max-width: 991px) {
+                height: calc(100vh - 435px);
+            }
+
+            @media screen and (max-width: 576px) {
+                height: calc(100vh - 455px);
+            }
+
+            @media screen and (max-height: 765px) {
+                height: calc(100vh - 430px);
+            }
+
+            .no-data-founded{
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+    }
+
+    // need for link effect in global in report section
+    .beauty-text-hover {
+        text-decoration: none;
+        color: var(--theme);
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: var(--theme);
+            bottom: -3px;
+            transform-origin: center;
+            transform: scale(0);
+            transition: .3s all ease-in-out;
+        }
+
+        &:hover {
+            &:before {
+                transform: scale(1);
+                transition: .3s all ease-in-out;
+            }
+        }
+    }
+
+    .details-page-content{
+        width: 100%;
+        height: calc(100vh - 85px);
+        overflow-y: scroll;
+
+        .btn-white{
+            &:hover, &:active, &:focus{
+                .arrow-icon{
+                    .arrow-icon-black{
+                        visibility: hidden;
+                    }
+                    .arrow-icon-white{
+                        visibility: visible;
+                    }
+                }
+            }
+            .arrow-icon{
+                position: relative;
+                padding: 0 10px;
+                .arrow-icon-black{
+                    position: absolute;
+                    top: -3px;
+                    left: -1px;
+                    visibility: visible;
+
+                    &.modal-open-btn{
+                        top: -14px;
+                        left: 4px;
+                    }
+
+                }
+                .arrow-icon-white{
+                    position: absolute;
+                    top: -3px;
+                    left: -1px;
+                    visibility: hidden;
+
+                    &.modal-open-btn{
+                        top: -14px;
+                        left: 4px;
+                    }
+
+                }
+            }
+        }
+
+        .dropdown-date-custom{
+            width: 675px;
+
+            @media screen and (max-width: 768px) {
+                width: 450px;
+            }
+
+            @media screen and (max-width: 512px) {
+                width: 340px !important;
+            }
+
+        }
+
+    }
+
+}

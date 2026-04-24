@@ -1,0 +1,369 @@
+// transitions
+
+$iterationTransition: 10; // defines the number of iteration of transition
+
+$base-time: 0.1s; // defines the base time of transition
+
+@for $i from 1 through $iterationTransition {
+    .transition-#{$i} {
+        transition: $base-time * $i ease-in-out !important;
+    }
+}
+
+
+.placeholder-loading {
+    max-width: 100%;
+    width: 100%;
+
+    .placeholder-anim {
+        animation-duration: 1.25s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: placeHolderShimmer;
+        animation-timing-function: linear;
+        background: darkgray;
+        background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+        background-size: 800px 104px;
+        height: 20px;
+        position: relative;
+        margin-bottom: 15px;
+        max-width: 100%;
+
+        &.max-700 {
+            max-width: 700px;
+        }
+
+        &.max-800 {
+            max-width: 800px;
+        }
+
+        &.max-900 {
+            max-width: 900px;
+        }
+    }
+}
+
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0
+    }
+    100% {
+        background-position: 468px 0
+    }
+}
+
+
+.verification-loading {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--border-color-1);
+    border-top: 5px solid var(--brand-dark-grey);
+    border-radius: 100%;
+    //box-shadow: 0 0 5px var(--shadow);
+    animation: loader 1s infinite linear;
+}
+
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/**
+ * ==============================================
+ * Dot Pulse button loading
+ * ==============================================
+ */
+
+
+@keyframes dot-pulse-before {
+    0% {
+        box-shadow: 9984px 0 0 -5px;
+    }
+    30% {
+        box-shadow: 9984px 0 0 2px;
+    }
+    60%, 100% {
+        box-shadow: 9984px 0 0 -5px;
+    }
+}
+
+@keyframes dot-pulse {
+    0% {
+        box-shadow: 9999px 0 0 -5px;
+    }
+    30% {
+        box-shadow: 9999px 0 0 2px;
+    }
+    60%, 100% {
+        box-shadow: 9999px 0 0 -5px;
+    }
+}
+
+@keyframes dot-pulse-after {
+    0% {
+        box-shadow: 10014px 0 0 -5px;
+    }
+    30% {
+        box-shadow: 10014px 0 0 2px;
+    }
+    60%, 100% {
+        box-shadow: 10014px 0 0 -5px;
+    }
+}
+
+//.3 .4 opacity
+
+.progress-animation {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    left: 12px;
+    top: 0;
+
+    // manage progress animation for otp input group cover
+    @media screen and (max-width: 645px) {
+        left: -45px;
+    }
+
+    @media screen and (max-width: 490px) {
+        left: 0;
+    }
+
+    @media screen and (max-width: 400px) {
+        left: -20px;
+    }
+
+    @media screen and (max-width: 390px) {
+        left: 10px;
+    }
+
+    @media screen and (max-width: 370px) {
+        left: 0;
+    }
+
+    .progress-loading {
+        width: 55px;
+        height: 67px;
+        font-size: 20px;
+        border-radius: 10px;
+        text-align: center;
+        margin: 10px;
+        background-color: var(--border-color-2);
+        border: 3px solid transparent;
+        animation: glitch 2s linear infinite;
+
+        // manage effect in focus-visibility normal focus, visible not workable
+
+        &:focus-visible {
+            outline-color: var(--theme);
+        }
+
+        @media screen and (max-width: 490px) {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+
+        @media screen and (max-width: 390px) {
+            width: 40px;
+            height: 40px;
+        }
+
+    }
+
+    @keyframes glitch {
+
+        0% {
+            opacity: 1;
+            background-color: var(--border-color-1);
+        }
+
+        25% {
+            opacity: 0.8;
+            background-color: var(--border-color-2);
+        }
+
+        50% {
+            opacity: 1;
+            background-color: var(--border-color-1);
+        }
+
+        75% {
+            opacity: 0.8;
+            background-color: var(--border-color-2);
+        }
+
+        100% {
+            opacity: 1;
+            background-color: var(--border-color-1);
+
+        }
+
+    }
+
+}
+
+
+//bootstrap placeholder
+.placeholder {
+    background-color: var(--border-color-1) !important;
+    border-radius: 10px;
+}
+
+
+.import-gradient {
+    width: 100% !important;
+    height: 5px;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+    background-color: var(--border-color-1);
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 5px;
+        left: 0;
+        transform-origin: left;
+        background: linear-gradient(to right, var(--grad-2), var(--grad-1));
+    }
+
+    &.progress-15 {
+        &:before {
+            transform: scaleX(.15);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+
+    &.progress-30 {
+        &:before {
+            transform: scaleX(.30);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+
+    &.progress-45 {
+        &:before {
+            transform: scaleX(.45);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+
+    &.progress-60 {
+        &:before {
+            transform: scaleX(.60);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+
+    &.progress-75 {
+        &:before {
+            transform: scaleX(.75);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+
+    &.progress-100 {
+        &:before {
+            transform: scaleX(1);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+
+}
+
+
+.overlay-loading {
+    cursor: wait;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+
+.loading-spin-1 {
+    width: 70px;
+    height: 70px;
+    border: 5px solid transparent;
+    border-top: 5px solid var(--brand-dark-grey);
+    border-radius: 50%;
+    animation: loader 1s infinite cubic-bezier(.6, .4, .3, .5);
+}
+
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.team-manage-loading {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    cursor: wait;
+    background-color: rgba(255, 255, 255, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loading-spin-1 {
+        opacity: .7;
+    }
+}
+
+.animation-top-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.3s all ease-in-out;
+    transform: translate(50%, 0);
+    animation: MoveUpDown 9s linear infinite;
+
+    &.animation-sm {
+        animation: MoveUpDownSmall 15s linear infinite;
+    }
+
+    &.translate-0 {
+        transform: translate(0);
+    }
+
+    @media screen and (max-width: 991px) {
+        transform: translate(5%, 0);
+    }
+
+
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 75px;
+    }
+}
+
+@keyframes MoveUpDownSmall {
+    0%, 100% {
+        //bottom: 0;
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(50px);
+        //bottom: 30px;
+    }
+}

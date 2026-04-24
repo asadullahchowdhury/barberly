@@ -1,0 +1,56 @@
+.appointment {
+    margin-top: 105px;
+    height: 100%;
+
+    .appointment-sidebar {
+        height: calc(100vh - 105px);
+        @media screen and (max-width: 991px) {
+            height: auto;
+            border: 0 !important;
+        }
+    }
+
+    .appointment-content {
+        height: calc(100vh - 105px);
+        overflow-y: scroll;
+
+        @media screen and (max-width: 991px) {
+            height: auto;
+        }
+
+    }
+
+    .bg-effect {
+        background-color: var(--white);
+        transition: 0.3s all ease-in-out;
+
+        &:hover {
+            transition: 0.3s all ease-in-out;
+            background-color: var(--theme-opacity-25);
+        }
+
+    }
+
+    .bg-light-effect {
+        background-color: transparent;
+        transition: 0.3s all ease-in-out;
+
+        &:hover {
+            transition: 0.3s all ease-in-out;
+            background-color: var(--bs-light);
+        }
+
+    }
+
+    .btn-white {
+
+        &:hover, &:active, &:focus {
+            transition: 0.3s all ease-in-out;
+            img{
+                filter: invert(1);
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,49 @@
+.customer-footer {
+
+    .text-theme {
+        color: var(--theme) !important;
+        transition: 0.3s all ease-in-out;
+        transform: translateX(0);
+
+        &:hover {
+            transform: translateX(5px);
+            color: var(--dark-theme) !important;
+            transition: 0.3s all ease-in-out;
+        }
+
+    }
+
+    .nav-link {
+        transition: .3s all ease-in-out;
+        transform: translateX(0);
+
+        &:hover {
+            transform: translateX(5px);
+            transition: .3s all ease-in-out;
+            color: var(--theme) !important;
+        }
+    }
+
+    .app-download-btn {
+        .apple {
+            transition: .3s all ease-in-out;
+        }
+
+        &:hover {
+            .apple {
+                transition: .3s all ease-in-out;
+                filter: brightness(100);
+            }
+        }
+    }
+
+    .software-carousel {
+        .splide__arrows {
+            display: none !important;
+        }
+        .splide__pagination {
+            display: none !important;
+        }
+    }
+
+}

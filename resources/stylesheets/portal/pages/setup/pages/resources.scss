@@ -1,0 +1,58 @@
+.resources {
+
+    .resources-body {
+        height: calc(100vh - 365px);
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        @media screen and (max-width: 991px) {
+            height: calc(100vh - 380px);
+        }
+
+        @media screen and (max-width: 768px) {
+            height: calc(100vh - 400px);
+        }
+
+        @media screen and (max-height: 567px) {
+            height: 550px;
+        }
+
+        .single-resource {
+
+            &.sortable-ghost {
+                border-color: transparent;
+                background-color: var(--light);
+
+                .service-title-wrap {
+                    opacity: 0;
+                }
+            }
+
+            .truncate-to-2-line{
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+        }
+
+    }
+
+}
+
+#resourceModal{
+    @media screen and (max-width: 450px) {
+        .modal-footer{
+            .btn-danger{
+                width: 90px !important;
+            }
+            .btn-white{
+                width: 90px !important;
+            }
+            .btn-theme{
+                width: 90px !important;
+            }
+        }
+    }
+}

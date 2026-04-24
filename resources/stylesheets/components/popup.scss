@@ -1,0 +1,146 @@
+.popup {
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--shadow);
+    padding: 20px;
+    position: fixed;
+
+    &.popup-dialog{
+        width: 600px;
+
+        @media screen and (max-width: 768px){
+            width: 90%;
+        }
+
+    }
+
+    &.popup-dialog-profile{
+        width: 500px;
+
+        @media screen and (max-width: 768px){
+            width: 90%;
+        }
+
+    }
+
+    .popup-header {
+
+        .popup-title {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .close-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: var(--light);
+
+            &:hover {
+                background-color: var(--booking-border);
+            }
+
+        }
+
+    }
+
+    .popup-body {
+
+        &.scrollable{
+            height: calc(100vh - 250px);
+            overflow-y: scroll;
+        }
+
+        &.profile-scrollable{
+            height: calc(100vh - 350px);
+            overflow-y: scroll;
+        }
+
+        &::-webkit-scrollbar {
+            background-color: transparent;
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: var(--light-gray);
+            border-radius: 10px;
+            height: 0 !important;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 10px;
+        }
+
+        .popup-avatar-wrapper {
+
+            .popup-avatar {
+                cursor: pointer;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                background-color: var(--theme-fade);
+            }
+
+        }
+
+        .delete-btn {
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--border-color-1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 0;
+            top: 105px;
+            background-color: var(--light);
+            border-radius: 50%;
+
+            &:hover {
+                background-color: var(--booking-border);
+            }
+
+        }
+
+    }
+
+    .popup-footer {
+        .btn{
+            height: 45px;
+        }
+        // reasonable purpose use have issue when another button conflict with this button
+        .btn-theme {
+            width: 100%;
+        }
+    }
+}
+
+.backdrop-shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--half-black);
+    visibility: hidden;
+    opacity: 0;
+    transition: .6s all ease-in-out;
+    z-index: 4;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        transition: .6s all ease-in-out;
+    }
+}

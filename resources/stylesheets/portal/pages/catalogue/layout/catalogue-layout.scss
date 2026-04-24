@@ -1,0 +1,15 @@
+.catalogue-layout {
+    position: relative;
+    height: calc(100vh - 80px);
+    overflow-x: hidden;
+
+
+    .catalogue-main-body{
+        /* Services */
+        @import "../../catalogue/pages/services";
+
+        /* Memberships */
+        @import "../../catalogue/pages/memberships";
+
+    }
+}

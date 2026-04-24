@@ -1,0 +1,82 @@
+{
+  "_index-6ec82d10.js": {
+    "css": [
+      "assets/index-5ffef9fa.css"
+    ],
+    "file": "assets/index-6ec82d10.js"
+  },
+  "_session-9882d55f.js": {
+    "file": "assets/session-9882d55f.js",
+    "imports": [
+      "_sorting-f3c62996.js"
+    ]
+  },
+  "_sorting-f3c62996.js": {
+    "css": [
+      "assets/sorting-41045d4d.css"
+    ],
+    "file": "assets/sorting-f3c62996.js"
+  },
+  "index.css": {
+    "file": "assets/index-5ffef9fa.css",
+    "src": "index.css"
+  },
+  "public/images/global/no-data.svg": {
+    "file": "assets/no-data-f5e515f1.svg",
+    "src": "public/images/global/no-data.svg"
+  },
+  "resources/js/auth-portal/app.js": {
+    "file": "assets/app-6b6f5c13.js",
+    "imports": [
+      "_sorting-f3c62996.js",
+      "_session-9882d55f.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/auth-portal/app.js"
+  },
+  "resources/js/customer-portal/app.css": {
+    "file": "assets/app-a4cc4d2a.css",
+    "src": "resources/js/customer-portal/app.css"
+  },
+  "resources/js/customer-portal/app.js": {
+    "css": [
+      "assets/app-a4cc4d2a.css"
+    ],
+    "file": "assets/app-6d16c1a8.js",
+    "imports": [
+      "_index-6ec82d10.js",
+      "_sorting-f3c62996.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/customer-portal/app.js"
+  },
+  "resources/js/portal/app.js": {
+    "file": "assets/app-d54cf189.js",
+    "imports": [
+      "_index-6ec82d10.js",
+      "_sorting-f3c62996.js",
+      "_session-9882d55f.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/portal/app.js"
+  },
+  "resources/stylesheets/auth-portal/styles.scss": {
+    "file": "assets/styles-9d0e2185.css",
+    "isEntry": true,
+    "src": "resources/stylesheets/auth-portal/styles.scss"
+  },
+  "resources/stylesheets/customer-portal/style.scss": {
+    "file": "assets/style-cca3214b.css",
+    "isEntry": true,
+    "src": "resources/stylesheets/customer-portal/style.scss"
+  },
+  "resources/stylesheets/portal/styles.scss": {
+    "file": "assets/styles-97b2da96.css",
+    "isEntry": true,
+    "src": "resources/stylesheets/portal/styles.scss"
+  },
+  "sorting.css": {
+    "file": "assets/sorting-41045d4d.css",
+    "src": "sorting.css"
+  }
+}

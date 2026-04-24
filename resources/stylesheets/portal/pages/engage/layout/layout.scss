@@ -1,0 +1,15 @@
+.engage-layout{
+    position: relative;
+    height: calc(100vh - 80px);
+    overflow-x: hidden;
+
+    /*
+    Engage sidebar
+    */
+    @import "includes/sidebar";
+
+    /*
+    Deals
+    */
+    @import "../../engage/pages/deals";
+}

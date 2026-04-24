@@ -1,0 +1,114 @@
+.for-business {
+    width: 100%;
+    height: auto;
+    background-color: var(--for-business-bg-color);
+    margin-top: 140px;
+    position: relative;
+
+    @media screen and (max-width: 1200px) {
+        margin-top: 100px;
+    }
+
+    @media screen and (max-width: 991px) {
+        margin-top: 70px;
+    }
+
+    .curve-content {
+        position: absolute;
+        right: 0;
+        top: -30.5%;
+        left: -14%;
+        width: 2400px;
+        height: 2400px;
+        z-index: 1;
+        background: var(--dark-theme);
+        border-radius: 100%;
+
+        @media screen and (min-width: 2000px) {
+            left: 3%;
+        }
+
+        @media screen and (max-width: 1600px) {
+            left: -30%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            left: -50%;
+        }
+
+        @media screen and (max-width: 991px) {
+            left: -65%;
+        }
+
+        @media screen and (max-width: 768px) {
+            top: -23%;
+            left: -120%;
+        }
+
+        @media screen and (max-width: 576px) {
+            top: -21%;
+            left: -250%;
+        }
+
+    }
+
+    .capture-carousel {
+        .splide__arrows {
+            display: none !important;
+        }
+
+        .splide__pagination {
+            display: flex;
+            justify-content: start;
+
+            .splide__pagination__page {
+                padding: 7px !important;
+                background-color: var(--border-color-3) !important;
+
+                &.is-active {
+                    transform: scale(1) !important;
+                    background-color: var(--black) !important;
+                }
+
+            }
+        }
+    }
+
+    .about-card {
+        background-color: var(--for-business-bg-color);
+    }
+
+    .pick-a-business-type {
+        background: var(--for-business-linear-gradient);
+        .box-hover{
+            transition: 0.3s all ease-in-out;
+
+            &:hover {
+                box-shadow: 0 0 12px 0 var(--border-color-3);
+                transition: 0.3s all ease-in-out;
+            }
+
+        }
+    }
+
+    .shadow-effect {
+        transition: 0.3s all ease-in-out;
+
+        &:hover {
+            transition: 0.3s all ease-in-out;
+            filter: drop-shadow(10px 10px 20px var(--border-color-3))
+        }
+
+    }
+
+    .shadow-box {
+        transition: 0.3s all ease-in-out;
+
+        &:hover {
+            transition: 0.3s all ease-in-out;
+            box-shadow: 0 0 16px 0 var(--border-color-3);
+        }
+
+    }
+
+}

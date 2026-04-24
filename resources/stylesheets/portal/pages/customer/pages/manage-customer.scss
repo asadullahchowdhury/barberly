@@ -1,0 +1,76 @@
+.card-form {
+
+    .card-box {
+        width: 50%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        .mobile-content {
+            .mobile-select {
+                width: 30%;
+            }
+
+            .mobile-input {
+                width: 70%;
+            }
+        }
+
+    }
+
+    .card-full-box {
+        width: 100%;
+    }
+
+    .btn-new-address {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .form-control{
+        line-height:4.5;
+    }
+
+}
+
+.password-content {
+    position: relative;
+}
+
+.mobile-content {
+    display: flex;
+    border-radius: 10px;
+
+    // select form into mobile input content
+
+    .mobile-select {
+        width: 20%;
+
+        .form-select {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        @media screen and (max-width: 645px) {
+            width: 30%;
+        }
+
+    }
+
+    // input form into mobile content
+
+    .mobile-input {
+        width: 80%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+
+        @media screen and (max-width: 645px) {
+            width: 70%;
+        }
+
+    }
+
+}

@@ -1,0 +1,74 @@
+.side-nav {
+    width: 78px;
+    min-height: 100vh;
+    background-color: var(--navbar-bg);
+    overflow-y: hidden;
+
+    @media screen and (max-width: 576px) {
+        display: none;
+    }
+
+    /*navbar brand*/
+    .nav-brand {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 15px;
+        text-align: center;
+    }
+
+
+    /*nav menu*/
+    .nav-menu {
+        margin: 0;
+        padding: 13px 13px 0 13px;
+        list-style: none;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        li {
+            margin-bottom: 10px;
+
+            a {
+                text-decoration: none;
+                width: 51px;
+                height: 51px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 16px;
+                transition: .3s all ease-in-out;
+
+                .nav-icon {
+                    transition: .3s all ease-in-out;
+                }
+
+
+                &:hover {
+                    background-color: var(--theme-fade);
+                    transition: .3s all ease-in-out;
+
+
+                    .nav-icon {
+                        transition: .3s all ease-in-out;
+                        filter: brightness(100);
+                    }
+                }
+
+                &.router-link-exact-active {
+                    transition: .3s all ease-in-out;
+                    background-color: var(--brand-aqua);
+
+                    .nav-icon {
+                        transition: .3s all ease-in-out;
+                        filter: brightness(100);
+                    }
+                }
+            }
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,700 @@
+// authentication code
+
+.authentication {
+    width: 100%;
+    overflow-y: scroll;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+
+    // form content
+
+    .content {
+        width: 640px;
+        height: 100vh;
+        overflow-y: scroll;
+        background-color: var(--white-opacity-85);
+
+
+        &.invitation {
+            @media screen and (min-width: 991px) {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            background-color: var(--white);
+        }
+
+        @media screen and (max-width: 991px) {
+            width: 100%;
+        }
+
+        .content-body-section {
+
+            // logo size
+
+            .logo {
+                width: 100%;
+                text-align: center;
+
+                // route
+
+                .arrow-btn {
+                    position: absolute;
+                    top: 69px;
+                    left: 38px;
+
+                    @media screen and (max-width: 645px) {
+                        top: 20px;
+                        left: 20px;
+                    }
+
+                    img {
+                        width: 22px;
+                        height: 24px;
+                    }
+
+                }
+
+                img {
+                    width: 298px;
+                    height: 40.53px;
+
+                    @media screen and (max-width: 645px) {
+                        width: 230px;
+                        height: auto;
+                    }
+
+                }
+
+            }
+
+            .check {
+                width: 100%;
+
+                img {
+                    width: 90px;
+                    height: 90px;
+
+                    @media screen and (max-width: 645px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                }
+
+            }
+
+            // title
+
+            .title {
+                text-align: center;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: var(--brand-dark-grey);
+
+                @media screen and (max-width: 645px) {
+                    padding: 30px 0;
+                    font-size: 19px;
+                }
+
+            }
+
+            // subtitle
+
+            .subtitle {
+                text-align: center;
+                font-style: normal;
+                line-height: normal;
+                color: var(--black-opacity-55);
+                margin-bottom: 23px;
+                font-weight: normal;
+
+                .text-dark {
+                    color: var(--black);
+                }
+
+                @media screen and (max-width: 645px) {
+                    margin-bottom: 20px;
+                }
+
+                // verification page of phone number text
+
+                .mobile-text {
+                    color: var(--brand-dark-grey);
+                }
+
+            }
+
+            .mid-title {
+                text-align: center;
+                font-size: 19px;
+                font-weight: 700;
+                color: var(--brand-dark-grey);
+                margin-bottom: 15px;
+
+                @media screen and (max-width: 645px) {
+                    font-size: 17px;
+                }
+
+            }
+
+            // form center
+
+            .form-center {
+                display: grid;
+                justify-content: center;
+
+                // form action
+
+                .form-section {
+                    width: 475px;
+                    height: auto;
+
+                    @media screen and (max-width: 645px) {
+                        width: 360px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        width: 320px;
+                    }
+
+                    @media screen and (max-width: 370px) {
+                        width: 300px;
+                    }
+
+                    // grouping input
+
+                    .form-group {
+                        position: relative;
+
+                        // login apple, google, facebook icon
+
+                        .icon-media {
+                            position: absolute;
+                            top: 13px;
+                            left: 20px;
+                        }
+
+                        // password content of registration page
+
+                        .password-content {
+                            position: relative;
+
+                            // password icon position
+
+                            .password-hide-show {
+                                top: 16px;
+                                right: 16px;
+                                position: absolute;
+                                width: 20px;
+                                height: 20px;
+                            }
+
+                        }
+
+                        &.verification-otp-box {
+                            position: relative;
+
+                            .verification-loading {
+                                position: absolute;
+                                right: -45px;
+                                top: 20px;
+                                @media screen and (max-width: 645px) {
+                                    right: -80px;
+                                    top: 30px;
+                                    width: 30px;
+                                    height: 30px;
+                                }
+
+                                @media screen and (max-width: 576px) {
+                                    right: 170px;
+                                    top: 92px;
+                                }
+
+                                @media screen and (max-width: 490px) {
+                                    top: 68px;
+                                }
+
+                                @media screen and (max-width: 400px) {
+                                    right: 150px;
+                                }
+
+                                @media screen and (max-width: 390px) {
+                                    top: 60px;
+                                }
+
+                                @media screen and (max-width: 370px) {
+                                    right: 140px;
+                                }
+                            }
+                        }
+
+                        // otp input group -> use for grouping opt input
+
+                        .otp-input-group {
+                            width: auto;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 30px;
+
+                            // opt input group
+
+                            .otp-input {
+                                width: 55px;
+                                height: 67px;
+                                font-size: 20px;
+                                border-radius: 10px;
+                                text-align: center;
+                                margin: 10px;
+                                background-color: var(--input-background-color);
+                                border: 1px solid var(--border-color-2);
+
+                                &.is-invalid {
+                                    border-color: var(--danger);;
+                                }
+
+                                // manage effect in focus-visibility normal focus, visible not workable
+
+                                &:focus-visible {
+                                    outline-color: var(--theme);
+                                }
+
+                                @media screen and (max-width: 490px) {
+                                    width: 50px;
+                                    height: 50px;
+                                    margin: 5px;
+                                }
+
+                                @media screen and (max-width: 390px) {
+                                    width: 40px;
+                                    height: 40px;
+                                }
+
+                            }
+
+                            // in this code otp-input have number customize number right arrow up down not show
+
+                            .otp-input::-webkit-inner-spin-button,
+                            .otp-input::-webkit-outer-spin-button {
+                                -webkit-appearance: none;
+                                margin: 0;
+                            }
+
+                            input::placeholder {
+                                font-size: 15px;
+                                text-align: center;
+                                font-weight: 600;
+                            }
+
+                        }
+
+
+                        // form select of form-group maintain input field
+
+                        .form-select {
+                            background-color: var(--input-background-color);
+                            width: -webkit-fill-available;
+                            border-radius: 10px;
+                            outline: none;
+                            height: 50px;
+                            cursor: pointer;
+                            border: 1px solid transparent;
+                            -webkit-appearance: none;
+                            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+                            background-repeat: no-repeat;
+                            background-size: 12px;
+                            background-position: right;
+                            background-origin: content-box;
+                            transition: var(--default-transition);
+
+                            // effect maintain
+
+                            &:active, &:focus {
+                                transition: var(--default-transition);
+                                background-color: var(--white);
+                                border: 1px solid var(--focus-border-color);
+                            }
+
+                        }
+
+                        // use for button -> width 100%
+
+                        .w-100 {
+                            width: 100% !important;
+                        }
+
+                        .country-select-btn {
+                            background-color: var(--badge-bg);
+                            display: flex;
+                            justify-content: space-between;
+                            align-content: center;
+
+                            a {
+                                text-decoration: none;
+                                color: var(--theme);
+                                position: relative;
+
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 1px;
+                                    background-color: var(--theme);
+                                    bottom: -3px;
+                                    transform-origin: center;
+                                    transform: scale(0);
+                                    transition: .3s all ease-in-out;
+                                }
+
+                                &:hover {
+                                    &:before {
+                                        transform: scale(1);
+                                        transition: .3s all ease-in-out;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    .reset-loading {
+                        border: none !important;
+                        outline: none !important;
+                        background-color: transparent !important;
+                    }
+
+                }
+
+                // login page auth-hr use for or with border
+
+                .auth-hr {
+                    margin-top: 12px;
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    //border manage both side
+                    .hr {
+                        border: 1px solid var(--black-opacity-55);
+                        width: 46%;
+                        border-radius: 10px;
+                    }
+
+                    // text manage
+
+                    .or-text {
+                        top: -3px;
+                        position: relative;
+                        text-align: center;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        color: var(--brand-dark-grey);
+                    }
+
+                }
+
+            }
+
+            /*invitation*/
+            .accept-invitation {
+                height: calc(100vh - 125px);
+
+                .fixed-btn {
+                    top: 30px;
+                    left: 20px;
+                    position: fixed;
+                }
+
+                .icon-box {
+                    width: 65px;
+                    height: 65px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 15px;
+                    background-color: var(--theme-fade);
+                }
+
+                .btn-theme {
+                    width: 100%;
+                }
+
+                // password icon position
+                .password-icon {
+                    top: 16px;
+                    right: 16px;
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                }
+
+            }
+
+
+            /*sign up review*/
+
+            .sign-up-review {
+
+                .fixed-btn {
+                    top: 30px;
+                    left: 20px;
+                    position: fixed;
+                }
+
+                .avatar-upload-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .avatar-upload {
+                        cursor: pointer;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 150px;
+                        height: 150px;
+                        object-fit: cover;
+                        background-color: var(--theme-fade);
+                        border: 1px solid var(--theme-fade);
+
+                        .d-none {
+                            display: none;
+                        }
+                    }
+                }
+
+                .country-select-btn {
+                    background-color: var(--badge-bg);
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: center;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--theme);
+                        position: relative;
+
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 1px;
+                            background-color: var(--theme);
+                            bottom: -3px;
+                            transform-origin: center;
+                            transform: scale(0);
+                            transition: .3s all ease-in-out;
+                        }
+
+                        &:hover {
+                            &:before {
+                                transform: scale(1);
+                                transition: .3s all ease-in-out;
+                            }
+                        }
+                    }
+                }
+
+                .btn-theme {
+                    width: 100%;
+                }
+            }
+
+            /*actice workspace error*/
+            .active-workspace-error {
+                height: calc(100vh - 150px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        }
+
+        .content-footer-section {
+            display: flex;
+            align-items: end;
+            justify-content: center;
+
+            //footer section
+
+            .footer-section {
+                width: 100%;
+
+                // manage for download button
+
+                .bottom-content {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                // links manage in bottom
+
+                .flex-box {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .flex-content {
+                        display: flex;
+                        justify-content: start;
+                        align-items: stretch;
+                        text-decoration: none;
+                        color: var(--theme);
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 10px;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .height-50 {
+        height: 50px;
+    }
+
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    height: 0 !important;
+}
+
+
+.invalid-url {
+    max-width: 475px;
+
+    .text {
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: var(--brand-dark-grey);
+
+        @media screen and (max-width: 576px) {
+            font-size: 19px;
+        }
+    }
+
+    .btn-theme {
+        width: 100%;
+    }
+}
+
+
+/*success overview*/
+.success-overview {
+    .wrapper {
+        padding: 50px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media screen and (max-width: 576px) {
+            padding: 20px;
+        }
+
+        .success-icon {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .success-card {
+            max-width: 660px;
+            width: 100%;
+            border: 1px solid var(--border-color-1);
+            border-radius: 10px;
+
+            .card-body {
+                .workspace-list {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 10px;
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn-theme {
+            max-width: 660px;
+            width: 100%;
+        }
+    }
+}
+
+
+.portal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 54px;
+    @media screen and (max-height: 650px) {
+        padding: 40px 0;
+    }
+
+    @media screen and (max-width: 567px) {
+        gap: 15px;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--theme);
+
+        span {
+            margin-right: 12px;
+            position: relative;
+            top: 2px;
+        }
+    }
+}

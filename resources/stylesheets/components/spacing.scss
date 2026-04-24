@@ -1,0 +1,41 @@
+$iterationFontSize: 1000; //Defines the number of iteration.
+
+$base-value: 1px; //Defines the base value.
+
+
+@for $i from 1 through $iterationFontSize { // loop from 1px to 500px
+    .mw-#{$i} {
+        min-width: $base-value * $i !important;
+    }
+    .mh-#{$i} {
+        min-height: $base-value * $i !important;
+    }
+
+    .w-#{$i} {
+        width: $base-value * $i !important;
+    }
+
+    .h-#{$i} {
+        height: $base-value * $i !important;
+    }
+
+    .height-#{$i} {
+        height: $base-value * $i !important;
+    }
+}
+
+
+
+.max-100px{
+    max-width: 100px;
+}
+
+.h-70-percent{
+    height: 70%;
+}
+
+.scrollbar{
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}

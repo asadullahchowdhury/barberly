@@ -1,0 +1,129 @@
+.salon-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 2;
+
+    .logo {
+        max-width: 220px;
+        @media screen and (max-width: 400px) {
+            width: 150px;
+        }
+    }
+
+    .booking-inputs {
+        border: 1px solid var(--border-color-1);
+
+        .form-group {
+            position: relative;
+
+            &:after {
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 20px;
+                right: 0;
+                top: 20px;
+                background-color: var(--border-color-2);
+            }
+
+            &.no-after {
+                &:after {
+                    background-color: transparent;
+                }
+            }
+
+            .form-control {
+                height: auto;
+                border-radius: 0 !important;
+                border: none !important;
+
+                &.left-radius {
+                    border-top-left-radius: 50px !important;
+                    border-bottom-left-radius: 50px !important;
+                }
+
+                &.right-radius {
+                    border-top-right-radius: 50px !important;
+                    border-bottom-right-radius: 50px !important;
+                }
+
+                @media screen and (max-width: 1199px) {
+                    width: 150px;
+                }
+            }
+
+            .input-group {
+                .form-control {
+                    width: 300px;
+                }
+
+                .btn-theme {
+                    width: 100px;
+                    border-radius: 50rem !important;
+                    position: absolute;
+                    top: 5px;
+                    z-index: 5;
+                    right: 5px;
+                }
+            }
+
+
+            .treatment-dropdown {
+                height: 250px;
+                overflow-y: scroll;
+
+                @media screen and (max-width: 567px) {
+                    width: auto !important;
+                }
+
+                &::-webkit-scrollbar {
+                    background-color: var(--light);
+                    width: 10px;
+                    border-radius: 10px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background: var(--border-color-1);
+                    border-radius: 10px;
+                    height: 0 !important;
+                }
+
+            }
+        }
+    }
+
+    .user-drop {
+        background-color: var(--white);
+        padding: 10px;
+
+        @media screen and (max-width: 576px) {
+            padding: 0;
+        }
+
+        .chevron {
+            transition: .2s;
+        }
+
+        &.show {
+            .chevron {
+                transform: rotate(180deg);
+                transition: .2s;
+            }
+        }
+
+        .user-img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            @media screen and (max-width: 576px) {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+            }
+        }
+    }
+}

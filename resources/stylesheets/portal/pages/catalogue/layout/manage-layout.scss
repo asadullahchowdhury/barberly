@@ -1,0 +1,16 @@
+.catalogue-manage-layout{
+
+    /*service type*/
+    @import "../pages/service-type";
+
+
+    /*service manage*/
+    @import "../pages/service-manage";
+
+    /*membership manage*/
+    @import "../pages/membership-manage";
+}
+
+
+/*Header*/
+@import "../layout/includes/header";

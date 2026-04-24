@@ -1,0 +1,45 @@
+.deals {
+    .deal-filter {
+        .form-select {
+            @media screen and (min-width: 767px) {
+                max-width: 200px;
+            }
+        }
+    }
+
+    .deals-list {
+        height: calc(100vh - 380px);
+        overflow: auto;
+
+        .each-deal {
+            text-decoration: none;
+            color: var(--black);
+            transition: .3s all ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                transition: .3s all ease-in-out;
+                border-color: var(--theme) !important;
+            }
+        }
+    }
+}
+
+.btn-white{
+    &:hover, &:focus, &:active{
+        transition: 0.3s all ease-in-out;
+        .filter-icon{
+            transition: 0.3s all ease-in-out;
+            filter: invert(1) !important;
+        }
+    }
+}
+
+.summary-box {
+    transition: .3s all ease-in-out;
+
+    &:hover {
+        transition: .3s all ease-in-out;
+        border-color: var(--theme) !important;
+    }
+}

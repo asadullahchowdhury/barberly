@@ -1,0 +1,128 @@
+.profile-modal {
+
+    .avatar-upload {
+        cursor: pointer;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        background-color: var(--theme-fade);
+        border: 1px solid var(--theme-fade);
+    }
+
+    .preview-avatar {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 1px solid var(--theme-fade);
+
+        .popup-avatar {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .delete-btn {
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--border-color-1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        top: 105px;
+        background-color: var(--light);
+        border-radius: 50%;
+        transition: .3s all ease-in-out;
+
+        &:hover {
+            transition: .3s all ease-in-out;
+            background-color: var(--booking-border);
+        }
+
+    }
+}
+
+
+.service-charge-modal ,.tips-modal, .note-modal, .discount-modal{
+    .modal-header {
+        .modal-title {
+
+        }
+    }
+
+    .modal-body {
+        .form-group {
+            .form-label {
+                font-size: 24px;
+                font-weight: 400;
+            }
+
+            .form-control {
+                border-radius: 10px;
+                background: var(--light);
+                border-color: transparent;
+
+                &:focus {
+                    border-color: var(--focus-border-color);
+                }
+            }
+
+            .amount-field {
+                position: relative;
+
+                .currency {
+                    position: absolute;
+                    top: 14px;
+                    left: 110px;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+
+                .form-control {
+                    width: 153px;
+                    padding-right: 50px;
+                }
+            }
+
+            .percentage {
+                width: 18%;
+                cursor: pointer;
+                padding: 16px 0;
+                border-radius: 10px;
+                text-align: center;
+                background-color: var(--light);
+            }
+        }
+    }
+}
+
+#thisDateModal{
+    .modal-dialog{
+        .modal-content{
+            .modal-header{
+
+            }
+            .modal-body{
+                .delete-group{
+                    position: relative;
+                    right: 15px;
+                    @media screen and (max-width: 768px) {
+                        right: 0;
+                    }
+                    @media screen and (max-width: 450px) {
+                        right: 10px;
+                    }
+                }
+            }
+            .modal-footer{
+
+            }
+        }
+    }
+}

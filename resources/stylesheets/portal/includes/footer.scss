@@ -1,0 +1,27 @@
+.portal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 54px;
+    @media screen and (max-height: 650px) {
+        padding: 40px 0;
+    }
+
+    @media screen and (max-width: 567px) {
+        gap: 15px;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--theme);
+
+        span {
+            margin-right: 12px;
+            position: relative;
+            top: 2px;
+        }
+    }
+}

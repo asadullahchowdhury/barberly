@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="_6akgFf rS0Q19 _2mmNJm" data-qa="empty-state-icon">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FBD74C" d="M5.161 8.774h28.903v46.452H5.161z"></path>
+        <g transform="translate(16.516 18.58)">
+            <circle stroke="#101928" stroke-width="2" cx="32.516" cy="26.323" r="7.774"></circle>
+            <g stroke="#101928" stroke-width="2">
+                <path
+                    d="M16.373 26.323H3a3 3 0 01-3-3v-8.128h0V4a4 4 0 014-4H31.581a3 3 0 013 3v11.658h0M0 9.299h34.581"
+                    stroke-linecap="round" stroke-linejoin="bevel"></path>
+                <rect x="5.129" y="14.935" width="6.258" height="6.258" rx="2"></rect>
+            </g>
+            <path
+                d="M35.343 23.282a.773.773 0 010 1.093l-4.558 4.561a.772.772 0 11-1.093-1.093l4.558-4.561a.772.772 0 011.092 0z"
+                fill="#101928"></path>
+            <path
+                d="M35.343 28.936a.772.772 0 01-1.092 0l-4.559-4.561a.773.773 0 011.093-1.093l4.558 4.561a.773.773 0 010 1.093z"
+                fill="#101928"></path>
+        </g>
+    </g>
+</svg>

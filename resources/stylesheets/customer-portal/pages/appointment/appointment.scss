@@ -1,0 +1,112 @@
+.appointment-header {
+    &.sticky {
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        box-shadow: 0 0 5px var(--shadow);
+        z-index: 2;
+        top: -100px;
+        transition: transform .5s;
+        transform: translateY(100px);
+
+        @media screen and (max-width: 576px) {
+            padding: 16px;
+        }
+
+        .title {
+            opacity: 1;
+            visibility: visible;
+            transition: .2s all ease-in-out;
+        }
+    }
+}
+
+.appointment {
+    .appointment-info-card {
+        position: sticky !important;
+        top: 115px;
+        height: calc(100vh - 200px) !important;
+    }
+
+    .professional-card {
+        cursor: pointer;
+        transition: .3s all ease-in-out;
+
+        &:hover {
+            background-color: var(--light);
+        }
+
+        &.selected {
+            border-width: 2px;
+            border-color: var(--theme) !important;
+        }
+
+        .card-body {
+            .user-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 62px;
+                height: 62px;
+
+                .user {
+                    width: 62px;
+                    height: 62px;
+                }
+
+                .members-rating {
+                    top: 80px;
+                }
+            }
+        }
+    }
+
+    .card-confirmation {
+        cursor: pointer;
+        transition: .3s all ease-in-out;
+
+        &:hover {
+            background-color: var(--light);
+        }
+    }
+
+    .card-time {
+        cursor: pointer;
+        transition: .3s all ease-in-out;
+
+        &:hover {
+            background-color: var(--light);
+        }
+
+        &.selected {
+            border-color: var(--theme);
+        }
+    }
+
+
+    .dates-wrapper {
+        display: flex;
+        overflow: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+
+        .each-date {
+            .date {
+                cursor: pointer;
+                transition: .3s all ease-in-out;
+
+                &:hover {
+                    background-color: var(--light);
+                }
+
+                &.today {
+                    background-color: var(--theme);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+
+

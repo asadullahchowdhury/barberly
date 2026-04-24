@@ -1,0 +1,88 @@
+.sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100%;
+    background-color: var(--white);
+    padding: 10px;
+    z-index: 2;
+    border-right: 1px solid var(--shadow);
+    transition: 0.3s all ease-in-out;
+
+    &.active {
+        left: -208px;
+        transition: 0.3s all ease-in-out;
+    }
+
+    @media screen and (max-width: 1450px) {
+        position: absolute;
+        left: -200px;
+        top: 0;
+        bottom: 10px;
+
+        &.active {
+            left: 0;
+        }
+
+    }
+
+    .sidebar-toggler {
+        right: -25px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        background-color: var(--white);
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        border: 1px solid var(--shadow);
+        transform: rotate(180deg);
+        transition: 0.3s all ease-in-out;
+
+        @media screen and (max-width: 1450px){
+            right: -53px;
+            transform: rotate(0deg);
+            transition: 0.3s all ease-in-out;
+        }
+
+        &:hover{
+            background-color: var(--light);
+        }
+
+        &.active{
+            right: -65px;
+            transform: rotate(0deg);
+            transition: 0.3s all ease-in-out;
+
+            @media screen and (max-width: 1450px){
+                right: -25px;
+                transform: rotate(180deg);
+                transition: 0.3s all ease-in-out;
+            }
+
+        }
+    }
+
+    .sidebar-title {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .link {
+        text-decoration: none;
+        color: var(--black);
+        padding: 10px 0 10px 20px;
+        display: block;
+        transition: 0.3s all ease-in-out;
+        margin-bottom: 10px;
+
+        &.router-link-active, &:hover {
+            transition: 0.3s all ease-in-out;
+            background-color: var(--border-color-1);
+        }
+
+    }
+
+}

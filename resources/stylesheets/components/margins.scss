@@ -1,0 +1,276 @@
+//Defines the number of iteration.
+$iterations: 500;
+
+//Defines the base value.
+$base-value: 1px;
+
+
+//Loop to generate CSS classes
+
+@for $i from 1 through $iterations {
+
+    .margin-#{$i} {
+        margin: $base-value * $i!important;
+    }
+
+    .margin-top-#{$i} {
+        margin-top: $base-value * $i!important;
+    }
+
+    .margin-bottom-#{$i} {
+        margin-bottom: $base-value * $i!important;
+    }
+
+    .margin-right-#{$i} {
+        margin-right: $base-value * $i!important;
+    }
+
+    .margin-left-#{$i} {
+        margin-left: $base-value * $i!important;
+    }
+
+    .margin-x-#{$i} {
+        margin-left: $base-value * $i !important;
+        margin-right: $base-value * $i !important;
+    }
+
+    .margin-y-#{$i} {
+        margin-top: $base-value * $i !important;
+        margin-bottom: $base-value * $i !important;
+    }
+
+
+    // margin media queries
+
+    .margin-xxl-#{$i} {
+        @media screen and (min-width: 1400px) {
+            margin: $base-value * $i !important;
+        }
+    }
+
+    .margin-xl-#{$i} {
+        @media screen and (min-width: 1200px) {
+            margin: $base-value * $i !important;
+        }
+    }
+
+    .margin-lg-#{$i} {
+        @media screen and (min-width: 992px) {
+            margin: $base-value * $i !important;
+        }
+    }
+
+    .margin-md-#{$i} {
+        @media screen and (min-width: 768px) {
+            margin: $base-value * $i !important;
+        }
+    }
+
+    .margin-sm-#{$i} {
+        @media screen and (min-width: 576px) {
+            margin: $base-value * $i !important;
+        }
+    }
+
+
+    //margin right queries
+    .margin-xxl-right-#{$i} {
+        @media screen and (min-width: 1400px) {
+            margin-right: $base-value * $i !important;
+        }
+    }
+
+    .margin-xl-right-#{$i} {
+        @media screen and (min-width: 1200px) {
+            margin-right: $base-value * $i !important;
+        }
+    }
+
+    .margin-lg-right-#{$i} {
+        @media screen and (min-width: 992px) {
+            margin-right: $base-value * $i !important;
+        }
+    }
+
+    .margin-md-right-#{$i} {
+        @media screen and (min-width: 768px) {
+            margin-right: $base-value * $i !important;
+        }
+    }
+
+    .margin-sm-right-#{$i} {
+        @media screen and (min-width: 576px) {
+            margin-right: $base-value * $i !important;
+        }
+    }
+
+
+    //margin left queries
+    .margin-xxl-left-#{$i} {
+        @media screen and (min-width: 1400px) {
+            margin-left: $base-value * $i !important;
+        }
+    }
+
+    .margin-xl-left-#{$i} {
+        @media screen and (min-width: 1200px) {
+            margin-left: $base-value * $i !important;
+        }
+    }
+
+    .margin-lg-left-#{$i} {
+        @media screen and (min-width: 992px) {
+            margin-left: $base-value * $i !important;
+        }
+    }
+
+    .margin-md-left-#{$i} {
+        @media screen and (min-width: 768px) {
+            margin-left: $base-value * $i !important;
+        }
+    }
+
+    .margin-sm-left-#{$i} {
+        @media screen and (min-width: 576px) {
+            margin-left: $base-value * $i !important;
+        }
+    }
+
+
+    //margin top queries
+    .margin-xxl-top-#{$i} {
+        @media screen and (min-width: 1400px) {
+            margin-top: $base-value * $i !important;
+        }
+    }
+
+    .margin-xl-top-#{$i} {
+        @media screen and (min-width: 1200px) {
+            margin-top: $base-value * $i !important;
+        }
+    }
+
+    .margin-lg-top-#{$i} {
+        @media screen and (min-width: 992px) {
+            margin-top: $base-value * $i !important;
+        }
+    }
+
+    .margin-md-top-#{$i} {
+        @media screen and (min-width: 768px) {
+            margin-top: $base-value * $i !important;
+        }
+    }
+
+    .margin-sm-top-#{$i} {
+        @media screen and (min-width: 576px) {
+            margin-top: $base-value * $i !important;
+        }
+    }
+
+
+    //margin bottom queries
+    .margin-xxl-bottom-#{$i} {
+        @media screen and (min-width: 1400px) {
+            margin-bottom: $base-value * $i !important;
+        }
+    }
+
+    .margin-xl-bottom-#{$i} {
+        @media screen and (min-width: 1200px) {
+            margin-bottom: $base-value * $i !important;
+        }
+    }
+
+    .margin-lg-bottom-#{$i} {
+        @media screen and (min-width: 992px) {
+            margin-bottom: $base-value * $i !important;
+        }
+    }
+
+    .margin-md-bottom-#{$i} {
+        @media screen and (min-width: 768px) {
+            margin-bottom: $base-value * $i !important;
+        }
+    }
+
+    .margin-sm-bottom-#{$i} {
+        @media screen and (min-width: 576px) {
+            margin-bottom: $base-value * $i !important;
+        }
+    }
+
+
+    //margin x axis queries
+    .margin-xxl-x-#{$i} {
+        @media screen and (min-width: 1400px) {
+            margin-bottom: $base-value * $i !important;
+        }
+    }
+
+    .margin-xl-x-#{$i} {
+        @media screen and (min-width: 1200px) {
+            margin-left: $base-value * $i !important;
+            margin-right: $base-value * $i !important;
+        }
+    }
+
+    .margin-lg-x-#{$i} {
+        @media screen and (min-width: 992px) {
+            margin-left: $base-value * $i !important;
+            margin-right: $base-value * $i !important;
+        }
+    }
+
+    .margin-md-x-#{$i} {
+        @media screen and (min-width: 768px) {
+            margin-left: $base-value * $i !important;
+            margin-right: $base-value * $i !important;
+        }
+    }
+
+    .margin-sm-x-#{$i} {
+        @media screen and (min-width: 576px) {
+            margin-left: $base-value * $i !important;
+            margin-right: $base-value * $i !important;
+        }
+    }
+
+
+    //margin y axis queries
+    .margin-xxl-y-#{$i} {
+        @media screen and (min-width: 1400px) {
+            margin-top: $base-value * $i !important;
+            margin-bottom: $base-value * $i !important;
+        }
+    }
+
+    .margin-xl-y-#{$i} {
+        @media screen and (min-width: 1200px) {
+            margin-top: $base-value * $i !important;
+            margin-bottom: $base-value * $i !important;
+        }
+    }
+
+    .margin-lg-y-#{$i} {
+        @media screen and (min-width: 992px) {
+            margin-top: $base-value * $i !important;
+            margin-bottom: $base-value * $i !important;
+        }
+    }
+
+    .margin-md-y-#{$i} {
+        @media screen and (min-width: 768px) {
+            margin-top: $base-value * $i !important;
+            margin-bottom: $base-value * $i !important;
+        }
+    }
+
+    .margin-sm-y-#{$i} {
+        @media screen and (min-width: 576px) {
+            margin-top: $base-value * $i !important;
+            margin-bottom: $base-value * $i !important;
+        }
+    }
+
+}

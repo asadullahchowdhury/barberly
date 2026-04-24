@@ -1,0 +1,79 @@
+.import-gradient {
+    width: 100% !important;
+    height: 5px;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+    background-color: var(--border-color-1);
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 5px;
+        left: 0;
+        transform-origin: left;
+        background: linear-gradient(to right, var(--grad-2), var(--grad-1));
+    }
+
+    &.progress-15 {
+        &:before {
+            transform: scaleX(.15);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+
+    &.progress-30 {
+        &:before {
+            transform: scaleX(.30);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+
+    &.progress-45 {
+        &:before {
+            transform: scaleX(.45);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+
+    &.progress-60 {
+        &:before {
+            transform: scaleX(.60);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+
+    &.progress-75 {
+        &:before {
+            transform: scaleX(.75);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+
+    &.progress-100 {
+        &:before {
+            transform: scaleX(1);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+
+}
+
+.actions-buttons {
+    .btn, .btn-theme {
+        width: 150px;
+    }
+
+    @media screen and (max-width: 576px) {
+        .btn {
+            width: auto;
+        }
+        .btn-theme {
+            width: 70px;
+        }
+    }
+
+}
+
+

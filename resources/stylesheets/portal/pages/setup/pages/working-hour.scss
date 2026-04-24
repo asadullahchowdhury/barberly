@@ -1,0 +1,157 @@
+.working-hour {
+
+    .working-hour-header {
+
+        .working-hour-title {
+            font-size: 30px;
+            color: var(--brand-dark-grey);
+            @media screen and (max-width: 460px) {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .btn-theme {
+                width: 100px!important;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .btn-theme {
+                width: 70px!important;
+            }
+        }
+    }
+
+    .working-hour-button-group {
+
+        .working-hour-button-manage {
+
+            .icon-btn {
+                width: 55px;
+                height: 55px;
+                background-color: var(--white);
+                transition: 0.3s all ease-in-out;
+
+                &:hover, &:active, &:focus {
+                    transition: 0.3s all ease-in-out;
+                    background-color: var(--border-color-1);
+                }
+
+                @media screen and (max-width: 768px) {
+                    width: 75px;
+                }
+
+                @media screen and (max-width: 576px) {
+                    width: 35px;
+                    height: 55px;
+                }
+
+            }
+
+            .form-control {
+                width: 320px;
+                height: 55px;
+
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+
+            }
+
+            .btn-week {
+                width: 150px;
+                height: 55px;
+                background-color: var(--white);
+
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+
+            }
+        }
+
+    }
+
+    .working-hour-content-group {
+        height: calc(100vh - 350px);
+        overflow-x: scroll;
+        overflow-y: scroll;
+
+        @media screen and (max-width: 1350px) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: start;
+        }
+
+        .working-hour-flex-content {
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+
+            @media screen and (max-width: 1350px) {
+                display: inline-block;
+            }
+
+            .team-table-column {
+                min-width: 225px;
+
+                @media screen and (max-width: 1350px) {
+                    min-width: 250px;
+                }
+
+            }
+
+            .team-schedule-column {
+                width: 220px;
+
+                @media screen and (max-width: 1350px) {
+                    min-width: 250px;
+                }
+
+            }
+
+        }
+
+        &::-webkit-scrollbar {
+            background-color: transparent;
+            width: 5px;
+            height: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: var(--border-color-1);
+            border-radius: 0;
+            height: 5px !important;
+        }
+
+        .btn-icon {
+            transition: 0.3s all ease-in-out;
+            border: none;
+            outline: none;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                transition: 0.3s all ease-in-out;
+                background-color: var(--border-color-2);
+            }
+        }
+
+    }
+
+    // business close period
+
+    .business-close-period-body {
+        width: 100%;
+        height: calc(100vh - 370px);
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+    }
+
+}

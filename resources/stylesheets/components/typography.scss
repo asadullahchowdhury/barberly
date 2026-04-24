@@ -1,0 +1,456 @@
+//Text colours
+.text-dark-gray {
+    color: var(--brand-dark-grey);
+}
+
+.text-gray {
+    color: var(--grey);
+}
+
+.text-lighter {
+    color: var(--text-light);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-danger {
+    color: var(--danger) !important;
+}
+
+.text-theme {
+    color: var(--theme) !important;
+}
+
+.theme-text {
+    color: var(--theme);
+    text-decoration: none;
+
+    &.text-center {
+        text-align: center;
+    }
+
+}
+
+.light-hover {
+    transition: .3s all ease-in-out;
+
+    &:hover {
+        background-color: var(--light);
+    }
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+//Background colors
+
+.bg-theme {
+    background-color: var(--theme) !important;
+}
+
+.bg-theme-opacity {
+    background-color: var(--badge-bg);
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+
+//custom tooltip
+.custom-tooltip {
+    .tooltip-inner {
+        font-size: 16px;
+        background-color: var(--half-black);
+        padding: 10px;
+    }
+
+    .tooltip-arrow::before {
+        border-right-color: var(--half-black) !important;
+    }
+}
+
+.custom-tooltip2 {
+    .tooltip-inner {
+        font-size: 16px;
+        background-color: var(--light);
+        padding: 10px;
+        color: black;
+    }
+
+    .tooltip-arrow::before {
+        border-right-color: var(--light) !important;
+    }
+}
+
+.theme-badge {
+    background-color: var(--theme-fade);
+    border: 1px solid var(--theme);
+    color: var(--theme);
+    padding: 3px 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.badge-success {
+    background-color: var(--focus-border-color-25);
+    border: 1px solid var(--success-border);
+    color: var(--focus-border-color);
+}
+
+.badge-warning {
+    background-color: var(--warning-bg);
+    border: 1px solid var(--warning-border);
+}
+
+.badge-danger {
+    background-color: var(--danger-bg);
+    border: 1px solid var(--alert-border);
+}
+
+
+// font weights
+
+$iterationWeight: 9; //Defines the number of iteration of font weight.
+
+$base-value: 100; //Defines the base value of font weight.
+
+
+@for $i from 1 through $iterationWeight { //font weight loop from 100 to 900
+    .font-weight-#{$i}00 {
+        font-weight: $base-value * $i !important;
+    }
+}
+
+// Font size
+
+
+$iterationFontSize: 100; //Defines the number of iteration of font size.
+
+$base-value: 1px; //Defines the base value of font size.
+
+
+@for $i from 1 through $iterationFontSize { //font size loop from 1px to 100px
+    .font-size-#{$i} {
+        font-size: $base-value * $i !important;
+    }
+}
+
+.line-height-1p2 {
+    line-height: 1.2;
+}
+
+.line-height-2 {
+    line-height: 2;
+}
+
+
+//text alignment
+.text-start {
+    text-align: start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: right;
+}
+
+
+//text decorations
+.text-decoration-none {
+    text-decoration: none;
+}
+
+// text-truncate
+.text-truncate {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+//error-report
+.error-report {
+    font-size: 14px;
+    color: var(--danger);
+    margin-top: 5px;
+}
+
+.alert-danger {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid;
+    border-radius: 10px;
+    color: var(--danger-dark);
+    background-color: var(--danger-bg);
+    border-color: var(--alert-border);
+}
+
+.dropdown-item {
+    &:active {
+        color: var(--black) !important;
+        background-color: var(--border-color-1) !important;
+    }
+}
+
+
+// Border radius
+
+$iterationRadius: 100; //Defines the number of iteration of border radius.
+
+
+$base-value: 1px; //Defines the base value of border radius.
+
+
+@for $i from 1 through $iterationRadius { //border radius loop from 1px to 100px
+    .border-radius-#{$i} {
+        border-radius: $base-value * $i !important;
+    }
+}
+
+.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+
+.disable-feature {
+    opacity: .6;
+    pointer-events: none;
+    user-select: none;
+}
+
+.underline-anim {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+
+    &.text-theme {
+        &:before {
+            background-color: var(--theme);
+        }
+    }
+
+    &.text-danger {
+        &:before {
+            background-color: var(--bs-danger);
+        }
+    }
+
+    &:before {
+        position: absolute;
+        content: '';
+        bottom: -2px;
+        height: 1px;
+        background-color: var(--black);
+        width: 100%;
+        transform-origin: center;
+        transform: scale(0);
+        transition: .3s all ease-in-out;
+    }
+
+    &:hover {
+        &:before {
+            transition: .3s all ease-in-out;
+            transform: scale(1);
+        }
+    }
+}
+
+
+.text-ellipsis2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.border-theme {
+    border-color: var(--theme) !important;
+}
+
+//Defines the number of iteration.
+$iterationsWidthHeight: 1000;
+
+
+//Loop to generate CSS classes
+
+@for $i from 1 through $iterationsWidthHeight {
+
+    .width-#{$i} {
+        width: $base-value * $i !important;
+    }
+    .max-width-#{$i} {
+        max-width: $base-value * $i !important;
+    }
+    .min-width-#{$i} {
+        min-width: $base-value * $i !important;
+    }
+    .width-xxl-#{$i} {
+        @media screen and (min-width: 1400px) {
+            width: $base-value * $i !important;
+        }
+    }
+    .min-width-xxl-#{$i} {
+        @media screen and (min-width: 1400px) {
+            min-width: $base-value * $i !important;
+        }
+    }
+    .max-width-xxl-#{$i} {
+        @media screen and (min-width: 1400px) {
+            max-width: $base-value * $i !important;
+        }
+    }
+
+    .width-xl-#{$i} {
+        @media screen and (min-width: 1400px) {
+            width: $base-value * $i !important;
+        }
+    }
+    .min-width-xl-#{$i} {
+        @media screen and (min-width: 1400px) {
+            min-width: $base-value * $i !important;
+        }
+    }
+    .max-width-xl-#{$i} {
+        @media screen and (min-width: 1400px) {
+            max-width: $base-value * $i !important;
+        }
+    }
+
+    .width-lg-#{$i} {
+        @media screen and (min-width: 1400px) {
+            width: $base-value * $i !important;
+        }
+    }
+    .min-width-lg-#{$i} {
+        @media screen and (min-width: 1400px) {
+            min-width: $base-value * $i !important;
+        }
+    }
+    .max-width-lg-#{$i} {
+        @media screen and (min-width: 1400px) {
+            max-width: $base-value * $i !important;
+        }
+    }
+
+    .width-md-#{$i} {
+        @media screen and (min-width: 1400px) {
+            width: $base-value * $i !important;
+        }
+    }
+    .min-width-md-#{$i} {
+        @media screen and (min-width: 1400px) {
+            min-width: $base-value * $i !important;
+        }
+    }
+    .max-width-md-#{$i} {
+        @media screen and (min-width: 1400px) {
+            max-width: $base-value * $i !important;
+        }
+    }
+
+    .width-sm-#{$i} {
+        @media screen and (min-width: 1400px) {
+            width: $base-value * $i !important;
+        }
+    }
+    .min-width-sm-#{$i} {
+        @media screen and (min-width: 1400px) {
+            min-width: $base-value * $i !important;
+        }
+    }
+    .max-width-sm-#{$i} {
+        @media screen and (min-width: 1400px) {
+            max-width: $base-value * $i !important;
+        }
+    }
+}
+
+.image-avatar {
+    border: 1px solid var(--bs-border-color);
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    &.sm {
+        width: 24px;
+        height: 24px;
+    }
+
+    &.md {
+        width: 45px;
+        height: 45px;
+    }
+
+    &.lg {
+        width: 65px;
+        height: 65px;
+    }
+
+    &.xl {
+        width: 100px;
+        height: 100px;
+    }
+
+    &.xxl {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.image-avatar-dummy {
+    min-width: 45px;
+    min-height: 45px;
+    background-color: #4ac1c040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--theme);
+    text-transform: uppercase;
+    font-weight: 550;
+
+    &.sm {
+        width: 24px;
+        height: 24px;
+    }
+
+    &.md {
+        width: 45px;
+        height: 45px;
+    }
+
+    &.lg {
+        width: 65px;
+        height: 65px;
+    }
+
+    &.xl {
+        width: 100px;
+        height: 100px;
+    }
+
+    &.xxl {
+        width: 200px;
+        height: 200px;
+    }
+}

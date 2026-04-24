@@ -1,0 +1,29 @@
+.service-type-content-box {
+    max-width: 1024px;
+    width: 100%;
+    padding: 0 32px;
+
+    @media screen and (max-width: 576px) {
+        padding: 0 24px;
+    }
+
+    .service-card {
+        max-width: 560px;
+        width: 100%;
+        padding: 24px 32px;
+        transition: .3s all ease-in-out;
+
+        .icon {
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            transition: .3s all ease-in-out;
+            box-shadow: 0 0 3px var(--shadow);
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.customer-header {
+    transition: 0.3s all ease-in-out;
+    background-color: var(--white);
+    padding: 24px 32px 16px;
+
+    @media screen and (max-width: 567px) {
+        padding: 16px;
+    }
+
+    .title {
+        opacity: 0;
+        visibility: hidden;
+        transition: .2s all ease-in-out;
+    }
+
+    &.sticky {
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        box-shadow: 0 0 5px var(--shadow);
+        z-index: 2;
+        padding: 24px 32px;
+        top: -100px;
+        transition: transform .5s;
+        transform: translateY(100px);
+
+        @media screen and (max-width: 576px) {
+            padding: 16px;
+        }
+
+        .title {
+            opacity: 1;
+            visibility: visible;
+            transition: .2s all ease-in-out;
+        }
+    }
+
+    .customer-add-close-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s all ease;
+
+        &:hover {
+            transition: 0.3s all ease;
+            background-color: var(--booking-border);
+        }
+    }
+
+    .res-btn{
+        width: 150px !important;
+
+        @media screen and (max-width: 567px) {
+            width: 115px !important;
+        }
+
+    }
+}
+
+.manage-customer {
+    overflow-y: scroll;
+
+    @import "../pages/manage-customer";
+
+}

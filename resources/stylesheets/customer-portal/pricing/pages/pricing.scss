@@ -1,0 +1,18 @@
+.pricing {
+
+    .pick-a-business-type {
+        background: var(--for-business-linear-gradient);
+
+        .box-hover{
+            transition: 0.3s all ease-in-out;
+
+            &:hover {
+                box-shadow: 0 0 12px 0 var(--border-color-3);
+                transition: 0.3s all ease-in-out;
+            }
+
+        }
+
+    }
+
+}

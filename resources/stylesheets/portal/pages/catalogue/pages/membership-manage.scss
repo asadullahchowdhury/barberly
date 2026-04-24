@@ -1,0 +1,53 @@
+.membership-manage {
+    .membership-form-content-box {
+        max-width: 820px;
+        width: 100%;
+        padding: 0 32px;
+        @media screen and (max-width: 576px) {
+            padding: 0 16px;
+        }
+
+        .manage-card {
+            width: 100%;
+            .card-title{
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .color[type=radio] {
+        position: relative;
+        border: 0 solid transparent;
+        border-radius: 50%;
+        background: none;
+        cursor: pointer;
+        line-height: 0;
+        margin: 0 .6em 0 0;
+        outline: 0;
+        padding: 0 !important;
+        vertical-align: text-top;
+        width: 45px;
+        height: 45px;
+        -webkit-appearance: none;
+
+        &[type=radio]:checked {
+            border: 0 solid transparent;
+
+            &[type=radio]:before {
+                content: "";
+                position: absolute;
+                top: -5PX;
+                left: -5PX;
+                width: 55px;
+                height: 55px;
+                border: 3px solid var(--theme);
+                border-radius: 50%;
+                z-index: 0;
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,110 @@
+.sidebar {
+    width: 200px;
+    height: calc(100vh - 80px);
+    background-color: var(--white);
+    border-right: 1px solid var(--shadow);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    transition: 0.3s all ease-in-out;
+
+    @media screen and (max-width: 1500px) {
+        left: -210px;
+    }
+
+    &.active {
+        left: -210px;
+        transition: 0.3s all ease-in-out;
+
+        @media screen and (max-width: 1500px) {
+            left: 0;
+        }
+    }
+
+    .sidebar-toggler {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        border: 1px solid var(--shadow);
+        border-radius: 50%;
+        position: fixed;
+        left: 262px;
+        transition: 0.3s all ease-in-out;
+
+        @media screen and (max-width: 1500px) {
+            left: 90px;
+        }
+
+        img {
+            transition: .3s;
+            width: 20px;
+            height: 20px;
+            transform: rotate(180deg);
+            @media screen and (max-width: 1500px) {
+                transform: rotate(0deg);
+            }
+        }
+
+        &.opened {
+            left: 95px;
+            transition: 0.3s all ease-in-out;
+
+            @media screen and (max-width: 1500px) {
+                left: 262px;
+            }
+
+            img {
+                transition: .3s;
+                transform: rotate(0deg);
+
+                @media screen and (max-width: 1500px) {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        &:hover {
+            background-color: var(--light);
+            transition: .3s all ease-in-out;
+        }
+    }
+
+    .sidebar-content {
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .sidebar-title {
+            font-size: 18px;
+            padding: 8px 16px;
+        }
+
+        .sidebar-menu {
+            li {
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: var(--black);
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                    transition: .3s ease-in-out;
+                    font-weight: 400;
+
+                    &.router-link-active, &:hover {
+                        transition: 0.3s all ease-in-out;
+                        background-color: var(--border-color-1);
+                    }
+                }
+            }
+        }
+    }
+}

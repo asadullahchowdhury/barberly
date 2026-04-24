@@ -1,0 +1,115 @@
+.employee-header{
+    transition: 0.3s all ease-in-out;
+    background-color: var(--white);
+    padding: 24px 32px 16px;
+
+    .title {
+        opacity: 0;
+        visibility: hidden;
+        transition: .2s all ease-in-out;
+    }
+
+    &.sticky {
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        box-shadow: 0 0 5px var(--shadow);
+        z-index: 100000;
+        padding: 24px 32px;
+        top: -100px;
+        transition: transform .5s;
+        transform: translateY(100px);
+
+        @media screen and (max-width: 576px) {
+            padding: 16px;
+        }
+
+        .title {
+            opacity: 1;
+            visibility: visible;
+            transition: .2s all ease-in-out;
+        }
+    }
+
+    .employee-add-close-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s all ease;
+
+        &:hover {
+            transition: 0.3s all ease;
+            background-color: var(--booking-border);
+        }
+    }
+
+}
+
+.manage-employee{
+
+    .badge-hover-effect{
+        &:hover, &:active, &:focus{
+            transition: 0.3s all ease-in-out;
+            background-color: var(--setting-hover-effect);
+        }
+        &.active{
+            transition: 0.3s all ease-in-out;
+            background-color: var(--setting-hover-effect);
+        }
+
+    }
+
+    .avatar{
+        cursor: pointer;
+    }
+
+    .form-control{
+        border: 1px solid transparent;
+    }
+
+    .color[type=radio] {
+        position: relative;
+        border: 0 solid transparent;
+        border-radius: 50%;
+        background: none;
+        cursor: pointer;
+        line-height: 0;
+        margin: 0 .6em 0 0;
+        outline: 0;
+        padding: 0 !important;
+        vertical-align: text-top;
+        width: 45px;
+        height: 45px;
+        -webkit-appearance: none;
+
+        &[type=radio]:checked {
+            border: 0 solid transparent;
+
+            &[type=radio]:before {
+                content: "";
+                position: absolute;
+                top: -5PX;
+                left: -5PX;
+                width: 55px;
+                height: 55px;
+                border: 3px solid var(--theme);
+                border-radius: 50%;
+                z-index: 0;
+            }
+
+        }
+
+    }
+
+    .text-small{
+        font-size: 12px;
+    }
+
+}

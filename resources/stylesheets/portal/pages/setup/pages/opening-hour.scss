@@ -1,0 +1,31 @@
+.opening-hour-manage{
+
+    .opening-hour-manage-header{
+        border-bottom: 1px solid var(--theme);
+
+        .opening-hour-close-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: var(--light);
+            transition: 0.3s all ease-in-out;
+
+            &:hover {
+                transition: 0.3s all ease-in-out;
+                background-color: var(--booking-border);
+            }
+        }
+
+    }
+
+    .opening-hour-body{
+
+    }
+
+}

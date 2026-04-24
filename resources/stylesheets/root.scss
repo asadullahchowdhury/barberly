@@ -1,0 +1,167 @@
+:root {
+    // variable color
+    --theme: #4AC1C0;
+    --theme-opacity-25: rgba(74, 193, 192, .25);
+    --theme-gradient: linear-gradient(60deg, #16C1E8 0%, #63C0AC 45%, #16C1E8 100%);
+    --brand-dark-grey: #44484B;
+    --brand-dark-grey-opacity-75: rgba(68, 72, 75, .75);
+    --brand-dark-grey-opacity-50: rgba(68, 72, 75, .5);
+    --white: #fff;
+    --black: #000;
+    --black-1: #0001;
+    --black-2: #0002;
+    --theme-fade: rgba(74, 193, 192, 0.25);
+    --shadow: rgba(0, 0, 0, 0.25);
+    --light: #F8F9FA;
+    --navbar-bg: #414A4A;
+    --brand-aqua: #46B1C9;
+    --half-black: rgba(0, 0, 0, .5);
+    --account-setup-color: rgba(68, 72, 75, 0.50);
+    --grey: #6c757d;
+    --border-color-1: #e8e8ee;
+    --border-color-2: #D5DADC;
+    --border-color-3: #7B878E;
+    --border-color-4: #EFF2F4;
+    --booking-border: #DADADA;
+    --checkbox-border: rgba(123, 135, 142, 0.38);
+    --grey-500: #ccc;
+    --white-opacity-85: rgba(255, 255, 255, 0.85);
+    --white-opacity-25: rgba(255, 255, 255, 0.25);
+    --subtitle: #44484B7F;
+    --black-opacity-15: rgba(0, 0, 0, 0.15);
+    --focus-border-color: #63C1AD;
+    --focus-border-color-25: rgba(99, 193, 173, .25);
+    --input-background-color: #F0F4F57F;
+    --black-opacity-55: #44484B7F;
+    --light-gray: #E2E9F2;
+    --red: #FF0000FF;
+    --danger: #dc3545;
+    --danger-bg: #f8d7da;
+    --grad-1: #16C1E8;
+    --grad-2: #63C0AC;
+    --danger-dark: #b9303d;
+    --alert-border: #f5c6cb;
+    --warning-bg: #fff3cd;
+    --warning-border: #ffe69c;
+    --success-border: #a3cfbb;
+    --blue-1: #3093E8;
+    --orange-1: #F19101;
+    --green-1: #00A36D;
+    --red-1: #DA2346;
+
+    /*calendar*/
+    --fc-today-bg-color: #fff;
+    --fc-button-bg-color: #F8F9FA;
+    --fc-button-border-color: #F8F9FA;
+    --fc-button-text-color: #000;
+    --fc--light-border: #F2F2F8;
+    --fc-border-color: #D5DADC;
+
+    /*modal*/
+    --modal-bg: rgba(127, 127, 127, .6);
+
+    /*transitions*/
+    --default-transition: 0.2s all ease-in-out;
+    --fours-transition: 0.4s all ease-in-out;
+
+    /*font families*/
+    --font-lato: Lato, 'sans-serif';
+    --font-laxend-mega: 'Lexend Mega', sans-serif;
+
+    /* customer*/
+    --text-light: #A1A3A5;
+    --badge-bg: rgba(70, 177, 201, 0.1);
+    --check-input: #7B878E60;
+
+    /*settings*/
+    --setting-hover-effect: #f8f8fb;
+    --bg-white-opacity-25: rgba(255, 255, 255, 0.25);
+
+    /* for business */
+    --dark-theme: #489a98;
+    --for-business-bg-color: #f2f2f2;
+    --for-business-linear-gradient: linear-gradient(0deg, #fff, #f2f2f2 150px, #f2f2f2);
+
+
+    /* appointment */
+    --appointment-hover-effect: #4db4b3;
+}
+
+/*
+    Remove all default margin padding form each tag
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+    Body
+*/
+body {
+    font-family: var(--font-lato) !important;
+    font-size: 16px;
+
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 0;
+        height: 0 !important;
+    }
+
+}
+
+/*
+    global page transition page will start right to end left animation
+*/
+
+.route-enter-from {
+    opacity: 0;
+    transform: translateX(300px);
+}
+
+.route-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.route-leave-to {
+    opacity: 0;
+    transform: translateX(-300px);
+}
+
+.route-leave-active {
+    transition: all 0.3s ease-in;
+}
+
+/*
+Components
+*/
+@import "./components/display";
+@import "./components/flex";
+@import "./components/grid";
+@import "./components/margins";
+@import "./components/paddings";
+@import "./components/positions";
+@import "./components/spacing";
+@import "./components/typography";
+@import "./components/buttons";
+@import "./components/animation";
+@import "./components/icons";
+@import "./components/popup";
+@import "./components/sidebar";
+@import "./components/switch";
+@import "./components/filter";
+@import "./components/table";
+@import "./components/gallery";
+@import "./components/form-controls";
+@import "./components/modal";
+@import "./components/customToaster";
+@import "plugins/plugins";
+@import "components/preloader";
+@import "components/pagination";

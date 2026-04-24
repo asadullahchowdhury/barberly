@@ -1,0 +1,120 @@
+.content-wrapper {
+    margin-top: 110px;
+    display: flex;
+
+    &.card-content {
+        height: calc(100vh - 120px);
+    }
+
+    .group-button{
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .sidebar-address {
+        width: 500px;
+        height: calc(100vh - 120px);
+        border-right: 1px solid var(--border-color-1);
+        background-color: var(--white);
+
+        @media screen and (max-width: 991px) {
+            width: 100%;
+            border-right: 1px solid transparent;
+            display: none;
+            &.active {
+                display: block;
+            }
+
+        }
+
+        .sidebar-address-inner {
+            height: calc(100vh - 200px);
+
+            @media screen and (max-width: 991px) {
+                width: 100%;
+                height: calc(100vh - 310px);
+            }
+
+            .splide__pagination{
+                bottom: 2rem !important;
+            }
+
+        }
+
+        .address-card {
+
+            &:hover .image-effect {
+                transition: 0.3s all ease-in-out;
+                transform: scale(1.2);
+            }
+
+            .image-effect {
+                width: 100%;
+                height: auto;
+                transform: scale(1);
+                transition: 0.3s all ease-in-out;
+            }
+
+        }
+
+    }
+
+    .content-address {
+        width: calc(100% - 500px);
+        height: calc(100vh - 120px);
+
+        .group-activity {
+            display: none;
+
+            @media screen and (max-width: 991px) {
+                display: block;
+            }
+
+        }
+
+        @media screen and (max-width: 991px) {
+            width: 100%;
+            display: none;
+            &.active{
+                display: block;
+            }
+        }
+
+        .animated-up{
+            transition: 0.3s all ease-in-out;
+            @media screen and (max-width: 991px) {
+                &.active {
+                    transition: 0.3s all ease-in-out;
+                    position: fixed;
+                    bottom: 0;
+                    top: 105px;
+                    left: 0;
+                    right: 0;
+                    z-index: -1;
+                }
+            }
+        }
+
+    }
+
+    .btn {
+        &:hover {
+            img{
+                filter: invert(1);
+            }
+        }
+    }
+
+    .hover-effect {
+        background-color: transparent;
+        transition: 0.3s all ease-in-out;
+        border-radius: 5px;
+        list-style: none;
+
+        &:hover {
+            background-color: var(--border-color-1);
+            transition: 0.3s all ease-in-out;
+        }
+    }
+
+}

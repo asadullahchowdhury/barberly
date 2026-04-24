@@ -1,0 +1,105 @@
+.portal-layout {
+    display: flex;
+    width: 100%;
+
+    .component-wrapper {
+        position: relative;
+        width: 100%;
+    }
+    /*
+        Sidenav-res
+    */
+    @import "includes/sidenav-res"; /*
+    /*
+        Sidenav
+    */
+    @import "includes/sidenav"; /*
+        Header
+    */
+    @import "includes/header"; /*
+    dashboard
+    */
+    @import "pages/dashboard"; /*
+    sales
+    */
+    @import "pages/sales"; /*
+    Calendar
+    */
+    @import "pages/calendar"; /*
+    Customer
+    */
+    @import "pages/customer"; /*
+    profile
+    */
+    @import "pages/profile"; /*
+   Catalogue
+   */
+    @import "pages/catalogue/layout/catalogue-layout"; /*
+    Settings
+    */
+    @import "pages/setup/pages/settings"; /*
+    Report
+    */
+    @import "pages/report"; /*
+    working hour
+    */
+    @import "pages/setup/pages/working-hour"; /*
+     online booking inside content
+    */
+    @import "pages/online-booking/pages/market-place-online-booking"; /*
+    resources
+    */
+    @import "pages/setup/pages/resources"; /*
+    Engage layout
+    */
+    @import "pages/engage/layout/layout";
+
+}
+
+
+/* set online booking outside content */
+@import "pages/online-booking/pages/online-booking";
+
+/* set regular shift */
+@import "pages/setup/pages/set-regular-shift";
+
+/* opening hour */
+@import "pages/setup/pages/opening-hour";
+
+/* employee manage */
+@import "pages/setup/pages/team-manage";
+
+/*catalogue manage layout*/
+@import "pages/catalogue/layout/manage-layout";
+
+/*
+ Sync-Calendar
+ */
+@import "pages/sync-calender";
+
+/*
+ Sync-Calendar
+ */
+@import "pages/customer/layout/manage-layout.scss";
+
+/*
+ import-customer-file
+ */
+@import "pages/import-customer-file";
+
+/*
+ Notification
+ */
+@import "pages/notification";
+
+
+/*
+Engage manage layout
+*/
+@import "pages/engage/layout/manage-layout";
+
+
+/*
+ Footer
+ */
+@import "includes/footer";

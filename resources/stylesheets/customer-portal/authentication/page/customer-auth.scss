@@ -1,0 +1,52 @@
+.form-section {
+    width: 475px;
+
+    @media screen and (max-width: 576px) {
+        width: 90%;
+    }
+
+    .logo{
+        width: 230px;
+    }
+
+    .auth-hr {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        //border manage both side
+        .hr {
+            border: 1px solid var(--black-opacity-55);
+            width: 46%;
+            border-radius: 10px;
+        }
+
+        // text manage
+
+        .or-text {
+            top: -3px;
+            position: relative;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: var(--brand-dark-grey);
+        }
+
+    }
+
+    // user flow btn hover effect
+    .user-flow-btn {
+        background-color: transparent;
+        transition: 0.3s all ease-in-out;
+
+        &:hover {
+            background-color: var(--light);
+            transition: 0.3s all ease-in-out;
+        }
+
+    }
+
+}

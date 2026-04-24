@@ -1,0 +1,39 @@
+.deal-type {
+    .each-deal-box {
+        cursor: pointer;
+        position: relative;
+        transition: .3s all ease-in-out;
+        border-width: 2px !important;
+
+        &:hover {
+            transform: scale(1.02);
+            transition: .3s all ease-in-out;
+            box-shadow: 0 0 3px var(--shadow);
+        }
+
+        &.selected {
+            border-color: var(--theme) !important;
+
+            .selected-icon {
+                position: absolute;
+                top: -8px;
+                right: -9px;
+            }
+        }
+    }
+}
+
+.deal-manage {
+    .service-list {
+        li {
+            .item {
+                transition: .3s all ease-in-out;
+                &:hover {
+                    transition: .3s all ease-in-out;
+                    background-color: var(--border-color-1);
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,66 @@
+.table {
+    width: 100%;
+    border-spacing: 0;
+
+    thead {
+        tr {
+            th {
+                padding-bottom: 20px;
+                text-align: start;
+                border: none;
+                outline: none;
+
+                .check-input {
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 2px;
+                    border: 1px solid var(--checkbox-border);
+                }
+
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            &:hover {
+                transition: var(--default-transition);
+                td {
+                    background-color: var(--light);
+
+                    &:first-child {
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                    }
+
+                    &:last-child {
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            }
+
+            td {
+                padding: 18px 0;
+                vertical-align: middle;
+                outline: none;
+                transition: var(--default-transition);
+                border-bottom: none;
+
+                .check-input {
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 2px;
+                    border: 1px solid var(--checkbox-border);
+                }
+
+                .image-face {
+                    width: 38px;
+                    height: 38px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+}
