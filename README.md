@@ -52,24 +52,9 @@ Barberly is split into three single-page apps that share one Laravel API:
 | Styling | Bootstrap 5, Sass |
 | Tooling | Vite, Laravel Vite Plugin |
 
-## 🚀 Getting Started
+## 📌 About this repository
 
-```bash
-git clone https://github.com/asadullahchowdhury/barberly.git
-cd barberly
-
-composer install
-npm install
-
-cp .env.example .env
-php artisan key:generate
-# set DB_* values (and a Google Maps key if you need address autocomplete)
-php artisan migrate --seed
-php artisan storage:link
-
-npm run dev
-php artisan serve   # http://127.0.0.1:8000
-```
+This repository is a **portfolio showcase** of the architecture and code behind Barberly. It isn't packaged for installation or reuse — feel free to browse the code, and [reach out](https://www.linkedin.com/in/chowdhuryrahat) if you'd like a walkthrough or demo.
 
 ## 👤 Author
 
